@@ -1,30 +1,42 @@
 <header>
   <div class="container">
+    <a href="./index.html">
+      <svg class="logo" width="96px" height="50px">
+        <use href="./images/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Переключатель меню"
+      aria-expanded="false"
+      data-menu-button
+    >
+      <svg width="20px" height="20px">
+        <use class="menu__open" href="./images/icons.svg#icon-menu"></use>
+        <use class="menu__close" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
     <div class="nav-container">
-      <a href="./index.html">
-        <svg class="logo">
-          <use href="./images/icons.svg#icon-logo"></use>
-        </svg>
-      </a>
       <nav>
         <ul class="list menu">
           <li class="menu__item">
-            <a href="">About us</a>
+            <a href="#aboutus">About us</a>
           </li>
           <li class="menu__item">
-            <a href="">Program</a>
+            <a href="#program">Program</a>
           </li>
           <li class="menu__item">
-            <a href="">Speakers</a>
+            <a href="#speakers">Speakers</a>
           </li>
           <li class="menu__item">
-            <a href="">Price</a>
+            <a href="#price">Price</a>
           </li>
           <li class="menu__item">
-            <a href="">Reviews</a>
+            <a href="#reviews">Reviews</a>
           </li>
           <li class="menu__item">
-            <a href="">Contacts</a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -35,21 +47,21 @@
       <button class="btn" type="button">Register</button>
       <ul class="list socials">
         <li class="socials__item">
-          <a class="socials__link" href="">
+          <a class="socials__link" href="https://twitter.com/">
             <svg class="socials__icon" width="16px" height="16px">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="">
+          <a class="socials__link" href="https://www.instagram.com/">
             <svg class="socials__icon" width="16px" height="16px">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="">
+          <a class="socials__link" href="https://www.facebook.com/">
             <svg class="socials__icon" width="16px" height="16px">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>

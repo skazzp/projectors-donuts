@@ -26,6 +26,10 @@
     margin-bottom: 16px;
 }
 
+.article__list {
+    margin-bottom: 8px;
+}
+
 .article__text:not(:last-child) {
 margin-bottom: 8px;
 }
@@ -33,6 +37,10 @@ margin-bottom: 8px;
 .picture-box__item {
     width: 130px;
     height: 130px;
+
+    padding-top: 48px;
+    padding-bottom: 10px;
+    
     border-radius: 50%;
     background-color: var(--main-clr);
 
@@ -49,6 +57,7 @@ margin-bottom: 8px;
 }
 
 .picture-box__title {
+    text-align: center;
     font-family: var(--title-fnt);
     font-size: 18px;
 

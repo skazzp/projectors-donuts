@@ -1,18 +1,19 @@
 <header>
   <div class="nav-menu">
-    <div class="container">
-      <button
-        class="menu-btn"
-        type="button"
-        aria-label="Переключатель меню"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg width="20px" height="20px">
-          <use class="menu__open" href="./images/icons.svg#icon-menu"></use>
-          <use class="menu__close" href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Переключатель меню"
+      aria-expanded="false"
+      data-menu-button
+    >
+      <svg width="20px" height="20px">
+        <use class="menu__open" href="./images/icons.svg#icon-menu"></use>
+        <use class="menu__close" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="header__container container">
       <div class="menu-box" data-menu>
         <a href="./index.html">
           <svg class="menu-box__logo">
@@ -40,11 +41,33 @@
           </li>
         </ul>
       </div>
-      <a href="./index.html">
-        <svg class="logo">
-          <use href="./images/icons.svg#icon-logo"></use>
-        </svg>
-      </a>
+      <div class="menu__nav-container">
+        <a class="logo-link" href="./index.html">
+          <svg class="logo">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="list desktop-menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#aboutus">About us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#program">Program</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#speakers">Speakers</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#price">Price</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#reviews">Reviews</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
       <div class="register">
         <h1 class="header__title">Donut Masterclass with the Donut King</h1>
         <h2 class="register__title">Hosted by Eva Green</h2>

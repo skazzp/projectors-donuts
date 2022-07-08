@@ -40,6 +40,9 @@
   width: 190px;
   height: 85px;
   margin-bottom: 40px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .btn-box {
   display: block;
@@ -47,11 +50,11 @@
   margin-right: 0;
 }
 .menu-btn {
-  position: relative;
+  position: absolute;
   display: inline-flex;
   z-index: 101;
-  right: -100%;
-  top: 0%;
+  left: 90%;
+  top: 0px;
   padding: 0;
   margin: 0;
   background-color: transparent;
@@ -76,15 +79,29 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.menu__nav-container {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 16px;
+}
+.desktop-menu {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 20px;
+  }
 }
 .menu-box {
-  padding-top: 25px;
   position: absolute;
   display: none;
-  // background-color: red;
   width: 100%;
 
   &.is-open {
+    padding-top: 25px;
     display: flex;
     z-index: 9;
     position: fixed;
@@ -96,7 +113,8 @@
     height: 100vh;
   }
   @media screen and (min-width: 1280px) {
-    display: none;
+    // position: static;
+    // display: flex;
   }
 }
 .menu__link {
@@ -109,18 +127,30 @@
   color: var(--main-txt-clr);
 }
 .header__title {
+  max-width: 224px;
   font-family: var(--title-fnt);
   font-size: 30px;
   line-height: 1.27;
   text-align: center;
+  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
     text-align: left;
   }
   @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+    max-width: 490px;
     font-size: 64px;
     line-height: 1.02;
     text-align: left;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
   }
 }
 .register__title {
@@ -129,6 +159,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -138,4 +169,10 @@
     font-weight: 500;
     line-height: 1.21;
   }
+}
+.logo-link {
+  display: inline-flex;
+}
+.header__menu {
+  display: flex;
 }

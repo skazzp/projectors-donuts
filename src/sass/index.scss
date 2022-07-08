@@ -2,6 +2,8 @@
 // @import './example';
 // vars
 @import './utils/vars';
+@import './utils/hamburgers';
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 // base
 @import './base/reset';
 @import './base/base';

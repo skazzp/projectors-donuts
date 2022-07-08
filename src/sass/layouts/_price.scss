@@ -1,53 +1,46 @@
 .price {
-    background-color: var(--regestration-box-clr);
-
+  background-color: var(--regestration-box-clr);
 }
 
 .price__title {
-    margin-bottom: 16px;
-
-
+  margin-bottom: 16px;
 }
 
-// .price__list {
-//     list-style: 
-// }
-
 .price-card {
-    padding: 20px;
-    margin-bottom: 32px;
-        &:first-child {
-            margin-bottom: 12px;
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
+  padding: 20px;
+  margin-bottom: 32px;
 
-    border-radius: 40px;
+  border-radius: 40px;
 
-    background-color: var(--main-clr);
+  background-color: var(--main-clr);
 
+  &:first-child {
+    margin-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .price-card__title {
-    margin-bottom: 16px;
-    text-align: center;
+  margin-bottom: 16px;
+  text-align: center;
 
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.21;
-    font-style: italic;
-    
-    color: var(--main-txt-clr);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  font-style: italic;
+
+  color: var(--main-txt-clr);
 }
 
 .price-card__list {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .price-card__text {
-    line-height: 1.22;
+  line-height: 1.22;
 
-    color: var(--main-txt-clr);
+  color: var(--main-txt-clr);
 }
-

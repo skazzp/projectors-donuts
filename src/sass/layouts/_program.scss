@@ -2,8 +2,14 @@
     background-color: var(--primary-bg-color);
 }
 
+.program__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
 .program__article {
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 
 .article__title {
@@ -28,20 +34,25 @@
 
 .article__list {
     margin-bottom: 8px;
-  
-
 }
 
 .article__text:not(:last-child) {
 margin-bottom: 8px;
 }
 
+.article__text::before {
+    content:">";
+
+}
+
 .picture-box__list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 60px;
+    row-gap: 24px;
     column-gap: 20px;
 }
+
+
 
 .picture-box__item {
     width: 130px;
@@ -55,6 +66,11 @@ margin-bottom: 8px;
     background-color: var(--main-clr);
 
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+    &:nth-child(2),
+    &:nth-child(4) {
+        margin-top: 37px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 152px;
@@ -76,14 +92,30 @@ margin-bottom: 8px;
     top: 0;
     left: 0;
 
-    transform: translate(25%, -50%);
-
+    transform: translate(50%, -50%);
     position: absolute;
-    background-image: url(../images/mobile/programm/mobile-1-cooking-donut.png);
+    
     background-repeat: no-repeat;
-    background-size: cover; 
-    outline: 1px solid red;
+    background-size:contain; 
+
     }
+
+    .donate-1::before {
+        background-image: url(../images/mobile/programm/mobile-1-cooking-donut.png);
+    }
+
+    .donate-2::before {
+        background-image: url(../images/mobile/programm/mobile-2-cooking-donut.png);
+    }
+
+    .donate-3::before {
+        background-image: url(../images/mobile/programm/mobile-3-cooking-donut.png);
+    }
+
+    .donate-4::before {
+        background-image: url(../images/mobile/programm/mobile-4-cooking-donut.png);
+    }
+
 
 .picture-box__title {
     margin-bottom: 4px;

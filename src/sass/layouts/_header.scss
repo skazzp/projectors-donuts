@@ -93,6 +93,7 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     gap: 20px;
+    padding-top: 15px;
   }
 }
 .menu-box {
@@ -149,8 +150,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 16px;
   @media screen and (min-width: 768px) {
     align-items: flex-start;
+    padding-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: flex-start;
+    padding-top: 46px;
   }
 }
 .register__title {

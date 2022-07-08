@@ -1,0 +1,105 @@
+.section-registration {
+  &__wrapper {
+    background: var(--regestration-box-clr);
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0 0;
+    padding: 0 10px;
+
+    @media screen and (min-width: 1280px) {
+    }
+  }
+
+  &__title {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
+
+  @media screen and (min-width: 768px) {
+    &__wrapper {
+      border-radius: 0;
+      background: none;
+      box-shadow: none;
+      //max-width: 705px;
+    }
+    &__container-text {
+      max-width: 100px;
+      min-width: 90px;
+      margin: 0 30px 0 60px;
+    }
+    &__container {
+      background: #fffff9;
+      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+        4px 4px 4px rgba(171, 129, 108, 0.15);
+      border-radius: 150px;
+      display: flex;
+      align-items: center;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      border-bottom: none;
+      text-align: right;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.form-registration {
+  text-align: center;
+  &__submit {
+    margin-top: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__input {
+    border: 0;
+    border-bottom: 1px solid var(--btn-clr);
+    width: 100%;
+    margin-bottom: 20px;
+    background: var(--regestration-box-clr);
+  }
+  &__submit {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    &__container {
+      margin: 40px 0 40px 0;
+      padding-left: 25px;
+      border-left: 1px solid rgba(171, 129, 108, 0.5);
+    }
+    &__text {
+      width: 285px;
+      text-align: left;
+      margin: 0 0 20px 0;
+    }
+
+    &__submit {
+      margin: 95px 55px;
+    }
+    &__lable:last-child .form-registration__input {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 @import './common';
 @import './example';
 
-
 // vars
 @import './utils/vars';
 // base
@@ -11,15 +10,16 @@
 @import './components/btn';
 @import './components/logo';
 @import './components/social-list';
+@import './components/mobile-menu;
 // layouts
-@import './layouts/header';
-@import './layouts/about-us';
-@import './layouts/program';
-@import './layouts/speakers;
+@import ' ./layouts/header
+  ';
+@import ' ./layouts/about-us ';
+@import ' ./layouts/program ';
+@import '
+  ./layouts/speakers;
 @import './layouts/price';
 @import './layouts/reviews';
 @import './layouts/registration';
 @import './layouts/contact';
 @import './layouts/footer';
-
-

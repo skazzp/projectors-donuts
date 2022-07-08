@@ -81,12 +81,12 @@ margin-bottom: 8px;
     position: absolute;
     background-image: url(../images/mobile/programm/mobile-1-cooking-donut.png);
     background-repeat: no-repeat;
-    background-size: cover;
-
-}
+    background-size: cover; 
+    outline: 1px solid red;
+    }
 
 .picture-box__title {
-margin-bottom: 4px;
+    margin-bottom: 4px;
 
     text-align: center;
     font-family: var(--title-fnt);

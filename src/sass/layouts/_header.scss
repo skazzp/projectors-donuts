@@ -1,0 +1,54 @@
+.nav-menu {
+  position: relative;
+}
+.menu-btn {
+  position: relative;
+  display: inline-flex;
+  z-index: 101;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-btn.is-open .menu__open {
+  display: none;
+}
+.menu-btn .menu__open {
+  display: block;
+}
+.menu-btn.is-open .menu__close {
+  display: block;
+}
+.menu-btn .menu__close {
+  display: none;
+}
+.menu-box {
+  padding-top: 25px;
+  position: absolute;
+  display: none;
+  background-color: red;
+  width: 100%;
+
+  &.is-open {
+    display: flex;
+    z-index: 9;
+    position: fixed;
+    align-items: center;
+    background-color: rgba(254, 243, 228, 0.9);
+
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    padding: 0px;
+  }
+}

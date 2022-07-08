@@ -9,16 +9,24 @@
 
 }
 
-.price__list {
-    list-style:
-}
+// .price__list {
+//     list-style: 
+// }
 
 .price-card {
     padding: 20px;
+    margin-bottom: 32px;
+        &:first-child {
+            margin-bottom: 12px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
 
     border-radius: 40px;
 
     background-color: var(--main-clr);
+
 }
 
 .price-card__title {
@@ -32,3 +40,14 @@
     
     color: var(--main-txt-clr);
 }
+
+.price-card__list {
+    margin-bottom: 32px;
+}
+
+.price-card__text {
+    line-height: 1.22;
+
+    color: var(--main-txt-clr);
+}
+

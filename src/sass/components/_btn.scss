@@ -13,3 +13,27 @@
   color: var(--btn-txt-clr);
 }
 // dsctp only in header width 158px height 45px
+
+.btn-read-more {
+  padding: 0;
+
+  font-size: 18px;
+  font-family: var(--title-fnt);
+  color: var(--btn-clr);
+  border: none;
+  background-color: transparent;
+}
+
+.btn-read-more .btn-read-more--open {
+  display: none;
+}
+
+.btn-read-more.is-open {
+  .btn-read-more--open {
+    display: block;
+  }
+  .btn-read-more--close {
+    display: none;
+  }
+}
+

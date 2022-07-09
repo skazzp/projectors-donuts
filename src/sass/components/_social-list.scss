@@ -2,10 +2,14 @@
   display: flex;
   gap: 16px;
 }
+.socials__item {
+  display: inline-flex;
+}
 .socials__link {
+  display: inline-flex;
   fill: var(--main-txt-clr);
   &:hover,
   &:focus {
-    fill: red;
+    fill: var(--btn-clr);
   }
 }

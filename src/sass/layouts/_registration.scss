@@ -1,4 +1,6 @@
 .section-registration {
+  padding-left: 20px;
+  padding-right: 20px;
   &__wrapper {
     background: var(--regestration-box-clr);
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
@@ -96,7 +98,7 @@
     }
 
     &__submit {
-      margin: 95px 55px;
+      margin: 95px 40px;
     }
     &__lable:last-child .form-registration__input {
       margin-bottom: 0;

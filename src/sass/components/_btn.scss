@@ -1,5 +1,5 @@
 .btn {
-  width: 145px;
+  min-width: 145px;
   height: 40px;
   padding: 8px 47px;
   background-color: var(--btn-clr);
@@ -8,7 +8,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: calc(23 / 18);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   color: var(--btn-txt-clr);
 }

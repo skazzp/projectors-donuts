@@ -1,17 +1,72 @@
+.logo {
+  width: 96px;
+  height: 50px;
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 116px;
+  }
+}
 .nav-menu {
   position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mobile/header-bg/mobile-header-bg.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/header-bg/mobile-header-bg@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/header-bg/tablet-header-bg.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/header-bg/tablet-header-bg@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/header-bg/desktop-header-bg.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/header-bg/desktop-header-bg@2x.png);
+    }
+  }
+}
+.menu-box__logo {
+  width: 190px;
+  height: 85px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.btn-box {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 .menu-btn {
-  position: relative;
+  position: absolute;
   display: inline-flex;
   z-index: 101;
+  left: 90%;
+  top: 20px;
   padding: 0;
   margin: 0;
   background-color: transparent;
   border: transparent;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+.menu-ham {
+  position: absolute;
+  display: inline-flex;
+  z-index: 101;
 }
 .menu-btn.is-open .menu__open {
   display: none;
@@ -25,30 +80,111 @@
 .menu-btn .menu__close {
   display: none;
 }
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.menu__nav-container {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 16px;
+}
+.desktop-menu {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+  }
+}
 .menu-box {
-  padding-top: 25px;
   position: absolute;
   display: none;
-  background-color: red;
   width: 100%;
 
   &.is-open {
+    padding-top: 25px;
     display: flex;
     z-index: 9;
     position: fixed;
     align-items: center;
     background-color: rgba(254, 243, 228, 0.9);
-
     top: 0;
     left: 0;
     flex-direction: column;
     height: 100vh;
   }
+  @media screen and (min-width: 1280px) {
+    // position: static;
+    // display: flex;
+  }
+}
+.menu__link {
+  text-decoration: none;
+  font-family: var(--main-fnt);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--main-txt-clr);
+}
+.header__title {
+  max-width: 224px;
+  font-family: var(--title-fnt);
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    position: static;
-    justify-content: space-between;
-    padding: 0px;
+    text-align: left;
   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+    max-width: 490px;
+    font-size: 64px;
+    line-height: 1.02;
+    text-align: left;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: flex-start;
+    padding-top: 46px;
+  }
+}
+.register__title {
+  font-family: var(--main-fnt);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.21;
+  }
+}
+.logo-link {
+  display: inline-flex;
+}
+.header__menu {
+  display: flex;
 }

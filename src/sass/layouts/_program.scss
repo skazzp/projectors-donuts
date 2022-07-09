@@ -1,22 +1,41 @@
 .program {
     background-color: var(--primary-bg-color);
+  
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+    
 }
 
 .program__container {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 124px;
+        padding-right: 124px;
     }
 }
 
 .program__article {
+@media screen and (max-width: 767px) {
     margin-bottom: 55px;
+}
+
+    
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 32px) / 2);
-        margin-bottom: 75px;
-        margin-right: 32px;
     }
     
 
+}
+
+.article__thumb {
+   @media screen and (min-width: 1280px) {
+    width: 392px;
+   }
 }
 
 .article__title {
@@ -24,33 +43,53 @@
 
     @media screen and (min-width: 768px) {
        margin-bottom: 16px; 
-       font-size: 24px;
+      
     }
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 20px; 
+        font-size: 36px;
      }
 }
 
 .article__description {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+    }
 }
 
 .article__description--last {
-    margin-bottom: 16px;
+    @media screem and (max-width: 1279px) {
+        margin-bottom: 16px;
+    }
 }
 
 .article__list {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+    }
 }
 
 .article__text:not(:last-child) {
-margin-bottom: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768) {
+        margin-bottom: 16px;
+    }
 }
 
 .article__text::before {
     content:">";
+}
 
+.article__btn {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .program__picture-box {
@@ -69,10 +108,10 @@ margin-bottom: 8px;
     row-gap: 24px;
     column-gap: 20px;
 
-    // @media screen and (min-width: 768px) {
-    //     row-gap: 16px;
-    //     column-gap: 33px;
-    // }
+    @media screen and (min-width: 768px) {
+        // row-gap: 16px;
+        column-gap: 32px;
+    }
 }
 
 
@@ -80,44 +119,118 @@ margin-bottom: 8px;
 .picture-box__item {
     display: flex;
     justify-content: center;
- flex-basis: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
 
      &:nth-child(2n) {
         margin-top: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2);
+
+        &:nth-child(2n) {
+            margin-top: 51px;
+        }
     }
 }
 
 .picture-box__container::before {
     content: "";
     display: block;
-    width: 80px;
-    height: 80px;
+    
     top: 0;
     left: 0;
 
-    transform: translate(30%, -50%);
+    transform: translate(35%, -43%);
+
+    @media screen and (min-width: 768px) {
+        transform: translate(50%, -37%);
+    }
     position: absolute;
     
     background-repeat: no-repeat;
-    background-size:contain; 
+    background-size: contain; 
+}
 
+.donate-1::before {
+    width: 77px;
+    height: 80px;
+
+    background-image: 
+    url(../images/mobile/programm/mobile-1-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: 
+            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
     }
 
-    .donate-1::before {
-        background-image: url(../images/mobile/programm/mobile-1-cooking-donut.png);
+    @media screen and (min-width: 768px) {
+        width: 82px;
+        height: 90px;
+    }
+}
+
+.donate-2::before {
+    width: 75px;
+    height: 80px;
+
+    background-image:
+        url(../images/mobile/programm/mobile-2-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-2-cooking-donut@2x.png);
     }
 
-    .donate-2::before {
-        background-image: url(../images/mobile/programm/mobile-2-cooking-donut.png);
+    @media screen and (min-width: 768px) {
+        width: 69px;
+        height: 76px;
+    }
+}
+
+.donate-3::before {
+    width: 78px;
+    height: 80px;
+
+    background-image: 
+        url(../images/mobile/programm/mobile-3-cooking-donut.png);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-3-cooking-donut@2x.png);
     }
 
-    .donate-3::before {
-        background-image: url(../images/mobile/programm/mobile-3-cooking-donut.png);
+    @media screen and (min-width: 768px) {
+        width: 74px;
+        height: 82px;
+    }
+}
+
+.donate-4::before {
+    width: 74px;
+    height: 80px;
+
+    background-image:
+        url(../images/mobile/programm/mobile-4-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
     }
 
-    .donate-4::before {
-        background-image: url(../images/mobile/programm/mobile-4-cooking-donut.png);
+    @media screen and (min-width: 768px) {
+        width: 70px;
+        height: 78px;
     }
+}
 
 .picture-box__container {
     width: 130px;
@@ -138,6 +251,8 @@ margin-bottom: 8px;
     @media screen and (min-width: 768px) {
         width: 152px;
         height: 152px;
+
+        padding-top: 54px;
     }
     
     @media screen and (min-width: 1280px) {
@@ -149,6 +264,10 @@ margin-bottom: 8px;
 
 .picture-box__title {
     margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+    }
 
     text-align: center;
     font-family: var(--title-fnt);
@@ -176,5 +295,25 @@ margin-bottom: 8px;
     justify-content: center;
 }
 
+.picture__svg {
+    display: none;
 
+    @media screen and (max-width: 767px) {  
+        &--mobile {
+            display: block;
+        }
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1279px) {  
+        &--tablet {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {  
+        &--desktop {
+            display: block;
+        }
+    }
+    
+}

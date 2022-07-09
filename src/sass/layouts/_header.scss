@@ -36,10 +36,21 @@
     }
   }
 }
+.header-pic__container {
+  position: absolute;
+  z-index: -2;
+}
+
+.header-pic {
+  max-width: 100%;
+}
+.menu-box__link {
+  display: inline-flex;
+  margin-bottom: 40px;
+}
 .menu-box__logo {
   width: 190px;
   height: 85px;
-  margin-bottom: 40px;
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -123,13 +134,17 @@
     // display: flex;
   }
 }
+.menu__item {
+  text-align: center;
+}
 .menu__link {
+  display: inline-flex;
   text-decoration: none;
   font-family: var(--main-fnt);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.21;
-  text-align: center;
+
   color: var(--main-txt-clr);
 }
 .header__title {

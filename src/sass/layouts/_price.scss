@@ -54,6 +54,49 @@
   padding: 28px 28px 40px 28px;
 
     flex-basis: calc((100% - 64px) / 3);
+
+    background-repeat: no-repeat;
+    background-size: contain, 66px 74px, 66px 74px;
+    
+    &--pos-first {
+      background-image: 
+        url(../images/mobile/price-bg/snot-mob.png),
+        url(../images/desktop/price/donut1.png),
+        url(../images/desktop/price/donut3.png),
+        url(../images/desktop/price/donut2.png),;
+      background-position: 
+        top 0 left 0, 
+        top 403px left 0, 
+        top 257px right 24px, 
+        top 403px right 105px;
+      background-size: 
+        contain, 
+        66px 74px, 
+        66px 74px,
+        66px 74px;
+    }
+
+    &--pos-second {
+      background-image: 
+        url(../images/mobile/price-bg/snot-mob.png),
+        url(../images/desktop/price/donut1.png),
+        url(../images/desktop/price/donut3.png);
+      background-position: 
+        top 0 left 0, 
+        top 366px right 0, 
+        top 448px left 0;
+    }
+
+    &--pos-third {
+      background-image: 
+        url(../images/mobile/price-bg/snot-mob.png),
+        url(../images/desktop/price/donut1.png),
+        url(../images/desktop/price/donut3.png);
+      background-position: 
+        top 0 left 0, 
+        top 464px right 0, 
+        bottom 0 left 44px;
+    }
   }
 
   display: flex;
@@ -61,16 +104,17 @@
   justify-content: space-between;
 }
 
+
+
+
+
+
+
 .price-card__list {
 
     margin-bottom: 32px;
 
 }
-
-// .price-card__position {
-
-   
-// }
 
 .price-card__title {
   margin-bottom: 16px;

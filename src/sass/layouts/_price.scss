@@ -15,11 +15,15 @@
     display: flex;
     gap: 15px;
   }
+
+  @media screen and (min-width: 1280px) {
+ 
+    gap: 32px;
+  }
 }
 
 .price-card {
   padding: 20px;
-
 
   position: relative;  
 
@@ -44,6 +48,12 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 3);
+  }
+
+  @media screen and (min-width: 1280px) {
+  padding: 28px 28px 40px 28px;
+
+    flex-basis: calc((100% - 64px) / 3);
   }
 
   display: flex;
@@ -72,6 +82,10 @@
   font-style: italic;
 
   color: var(--main-txt-clr);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -84,6 +98,17 @@
 
   &:not(:last-child) {
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 16px;
+    line-height: 1.26;
+
+  
   }
 }
 

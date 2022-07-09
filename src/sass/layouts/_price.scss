@@ -4,24 +4,73 @@
 
 .price__title {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.price__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+ 
+    gap: 32px;
+  }
 }
 
 .price-card {
   padding: 20px;
-  margin-bottom: 32px;
+
+  position: relative;  
 
   border-radius: 40px;
 
   background-color: var(--main-clr);
+  background-image: url(../images/mobile/price-bg/snot-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 
-  &:first-child {
-    margin-bottom: 12px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+
+    &:first-child {
+      margin-bottom: 12px;
+    }
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 3);
   }
+
+  @media screen and (min-width: 1280px) {
+  padding: 28px 28px 40px 28px;
+
+    flex-basis: calc((100% - 64px) / 3);
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.price-card__list {
+
+    margin-bottom: 32px;
+
+}
+
+// .price-card__position {
+
+   
+// }
 
 .price-card__title {
   margin-bottom: 16px;
@@ -33,14 +82,37 @@
   font-style: italic;
 
   color: var(--main-txt-clr);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
-.price-card__list {
-  margin-bottom: 32px;
-}
+
 
 .price-card__text {
+  font-size: 18px;
   line-height: 1.22;
 
   color: var(--main-txt-clr);
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 16px;
+    line-height: 1.26;
+
+  
+  }
+}
+
+.price-card__thumb {
+  display: flex;
+  justify-content: center;
 }

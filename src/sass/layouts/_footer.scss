@@ -46,11 +46,7 @@
   display: flex;
   margin-top: 0;
   justify-content: center;
-
-  :nth-child(2n) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+gap: 16px;
 }
 
 .footer-contacts {
@@ -69,6 +65,6 @@
 
 .contacts-item {
   color: #2E2520;
-  text-decoration: none;
 }
+
 

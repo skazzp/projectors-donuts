@@ -17,7 +17,6 @@
   }
 
   @media screen and (min-width: 1280px) {
- 
     gap: 32px;
   }
 }
@@ -25,14 +24,24 @@
 .price-card {
   padding: 20px;
 
-  position: relative;  
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   border-radius: 40px;
-
   background-color: var(--main-clr);
   background-image: url(../images/mobile/price-bg/snot-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
+    
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/price-bg/snot-mob@2x.png);
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
@@ -53,17 +62,13 @@
   @media screen and (min-width: 1280px) {
   padding: 28px 28px 40px 28px;
 
-    flex-basis: calc((100% - 64px) / 3);
+  flex-basis: calc((100% - 64px) / 3);
 
-    background-repeat: no-repeat;
-    background-size: contain, 66px 74px, 66px 74px;
+  background-repeat: no-repeat;
+  background-size: contain, 66px 74px, 66px 74px;
     
     &--pos-first {
-      background-image: 
-        url(../images/mobile/price-bg/snot-mob.png),
-        url(../images/desktop/price/donut1.png),
-        url(../images/desktop/price/donut3.png),
-        url(../images/desktop/price/donut2.png),;
+
       background-position: 
         top 0 left 0, 
         top 403px left 0, 
@@ -74,46 +79,71 @@
         66px 74px, 
         66px 74px,
         66px 74px;
+      background-image: 
+        url(../images/mobile/price-bg/snot-mob.png),
+        url(../images/desktop/price/donut1.png),
+        url(../images/desktop/price/donut3.png),
+        url(../images/desktop/price/donut2.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: 
+            url(../images/mobile/price-bg/snot-mob@2x.png),
+            url(../images/desktop/price/donut1@2x.png),
+            url(../images/desktop/price/donut3@2x.png),
+            url(../images/desktop/price/donut2@2x.png);
+        }
     }
 
     &--pos-second {
-      background-image: 
-        url(../images/mobile/price-bg/snot-mob.png),
-        url(../images/desktop/price/donut1.png),
-        url(../images/desktop/price/donut3.png);
       background-position: 
-        top 0 left 0, 
-        top 366px right 0, 
-        top 448px left 0;
-    }
+          top 0 left 0, 
+          top 366px right 0, 
+          top 448px left 0;
+        background-image: 
+          url(../images/mobile/price-bg/snot-mob.png),
+          url(../images/desktop/price/donut1.png),
+          url(../images/desktop/price/donut3.png); 
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image:
+            url(../images/mobile/price-bg/snot-mob@2x.png),
+            url(../images/desktop/price/donut1@2x.png),
+            url(../images/desktop/price/donut3@2x.png);
+        }
+    }
+   
     &--pos-third {
-      background-image: 
-        url(../images/mobile/price-bg/snot-mob.png),
-        url(../images/desktop/price/donut1.png),
-        url(../images/desktop/price/donut3.png);
       background-position: 
         top 0 left 0, 
         top 464px right 0, 
         bottom 0 left 44px;
+
+      background-image: 
+        url(../images/mobile/price-bg/snot-mob.png),
+        url(../images/desktop/price/donut1.png),
+        url(../images/desktop/price/donut3.png);
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image:
+            url(../images/mobile/price-bg/snot-mob@2x.png),
+            url(../images/desktop/price/donut1@2x.png),
+            url(../images/desktop/price/donut3@2x.png);
+        }
     }
   }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-
-
-
-
-
-
 .price-card__list {
-
     margin-bottom: 32px;
-
 }
 
 .price-card__title {
@@ -132,8 +162,6 @@
   }
 }
 
-
-
 .price-card__text {
   font-size: 18px;
   line-height: 1.22;
@@ -151,8 +179,6 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 16px;
     line-height: 1.26;
-
-  
   }
 }
 

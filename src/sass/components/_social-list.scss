@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.socials__link {
+  fill: var(--main-txt-clr);
+  &:hover,
+  &:focus {
+    fill: red;
+  }
+}

@@ -1,10 +1,9 @@
 .program {
-    background-color: var(--primary-bg-color);
+    background-color: var(--regestration-box-clr);
   
     @media screen and (min-width: 768px) {
         padding-top: 60px;
     }
-    
 }
 
 .program__container {
@@ -20,21 +19,18 @@
 }
 
 .program__article {
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     margin-bottom: 55px;
-}
+    }
 
-    
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 32px) / 2);
     }
-    
-
 }
 
 .article__thumb {
    @media screen and (min-width: 1280px) {
-    width: 392px;
+        width: 392px;
    }
 }
 
@@ -43,13 +39,12 @@
 
     @media screen and (min-width: 768px) {
        margin-bottom: 16px; 
-      
     }
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 20px; 
         font-size: 36px;
-     }
+    }
 }
 
 .article__description {
@@ -57,6 +52,8 @@
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.22;
     }
 }
 
@@ -71,6 +68,8 @@
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.22;
     }
 }
 
@@ -97,8 +96,7 @@
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 32px) / 2);
         margin-top: 15px;
-    }
-    
+    }   
 }
 
 .picture-box__list {
@@ -113,8 +111,6 @@
         column-gap: 32px;
     }
 }
-
-
 
 .picture-box__item {
     display: flex;
@@ -141,20 +137,19 @@
     top: 0;
     left: 0;
 
-    transform: translate(35%, -43%);
-
-    @media screen and (min-width: 768px) {
-        transform: translate(50%, -37%);
-    }
     position: absolute;
     
     background-repeat: no-repeat;
     background-size: contain; 
+
+    @media screen and (max-width: 767px) {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .donate-1::before {
-    width: 77px;
-    height: 80px;
+    transform: translate(31%, -44%);
 
     background-image: 
     url(../images/mobile/programm/mobile-1-cooking-donut.png);
@@ -169,12 +164,17 @@
     @media screen and (min-width: 768px) {
         width: 82px;
         height: 90px;
+        transform: translate(42%, -40%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 97px;
+        height: 107px;
     }
 }
 
 .donate-2::before {
-    width: 75px;
-    height: 80px;
+    transform: translate(31%, -43%);
 
     background-image:
         url(../images/mobile/programm/mobile-2-cooking-donut.png);
@@ -189,12 +189,17 @@
     @media screen and (min-width: 768px) {
         width: 69px;
         height: 76px;
+        transform: translate(58%, -37%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 83px;
+        height: 92px;
     }
 }
 
 .donate-3::before {
-    width: 78px;
-    height: 80px;
+    transform: translate(31%, -49%);
 
     background-image: 
         url(../images/mobile/programm/mobile-3-cooking-donut.png);
@@ -209,12 +214,17 @@
     @media screen and (min-width: 768px) {
         width: 74px;
         height: 82px;
+        transform: translate(52%, -41%);
     }
+
+    @media screen and (min-width: 1280px) {
+            width: 88px;
+            height: 97px;
+    }   
 }
 
 .donate-4::before {
-    width: 74px;
-    height: 80px;
+    transform: translate(31%, -43%);
 
     background-image:
         url(../images/mobile/programm/mobile-4-cooking-donut.png);
@@ -229,6 +239,12 @@
     @media screen and (min-width: 768px) {
         width: 70px;
         height: 78px;
+        transform: translate(59%, -38%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 83px;
+        height: 92px;
     }
 }
 
@@ -236,7 +252,6 @@
     width: 130px;
     height: 130px;
    
-
     padding-top: 50px;
     padding-bottom: 10px;
     position: relative;
@@ -245,8 +260,6 @@
     background-color: var(--main-clr);
 
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-
-
 
     @media screen and (min-width: 768px) {
         width: 152px;
@@ -258,27 +271,27 @@
     @media screen and (min-width: 1280px) {
         width: 180px;
         height: 180px;
-    }
-   
+
+        padding-top: 65px;
+    }  
 }
 
 .picture-box__title {
     margin-bottom: 4px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 8px;
-    }
-
     text-align: center;
     font-family: var(--title-fnt);
     font-size: 18px;
 
     color: var(--secondary-txt-color);
 
-    @media screen and (min-width: 1280px) {
-        font-size: 24px;;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
     }
 
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
 }
 
 .picture-box__description {
@@ -288,6 +301,10 @@
 
     font-size: 14px;
     line-height: 1.22;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .picture-box__thumb {
@@ -315,5 +332,4 @@
             display: block;
         }
     }
-    
 }

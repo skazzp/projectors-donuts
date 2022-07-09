@@ -1,51 +1,53 @@
-<section class="section-registration container">
-  <div class="section-registration__wrapper container">
-    <h2 class="section-registration__title title">Registration</h2>
+<section class="section-registration">
+  <div class="container">
+    <div class="section-registration__wrapper">
+      <h2 class="section-registration__title title">Registration</h2>
 
-    <div class="section-registration__container">
-      <div class="section-registration__container-text">
-        <p class="section-registration__text">
-          May 23, 11:00<br />
-          New York
-        </p>
-      </div>
-
-      <form class="form-registration">
-        <div class="form-registration__container">
-          <p class="form-registration__text">
-            Apply your personal info for registration
+      <div class="section-registration__container">
+        <div class="section-registration__container-text">
+          <p class="section-registration__text">
+            May 23, 11:00<br />
+            New York
           </p>
-          <label class="form-registration__lable">
-            <input
-              class="form-registration__input"
-              type="text"
-              name="username"
-              placeholder="Your name"
-            />
-          </label>
-          <label class="form-registration__input">
-            <input
-              class="form-registration__input"
-              type="tel"
-              name="number"
-              placeholder="Phone number"
-              pattern="[380][0-9]{9}"
-            />
-          </label>
-          <label class="form-registration__lable">
-            <input
-              class="form-registration__input"
-              type="email"
-              name="email"
-              placeholder="Email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
-          </label>
         </div>
-        <button class="btn form-registration__submit" type="submit">
-          Register
-        </button>
-      </form>
+
+        <form class="form-registration">
+          <div class="form-registration__container">
+            <p class="form-registration__text">
+              Apply your personal info for registration
+            </p>
+            <label class="form-registration__lable">
+              <input
+                class="form-registration__input"
+                type="text"
+                name="username"
+                placeholder="Your name"
+              />
+            </label>
+            <label class="form-registration__input">
+              <input
+                class="form-registration__input"
+                type="tel"
+                name="number"
+                placeholder="Phone number"
+                pattern="[380][0-9]{9}"
+              />
+            </label>
+            <label class="form-registration__lable">
+              <input
+                class="form-registration__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+            </label>
+          </div>
+          <button class="btn form-registration__submit" type="submit">
+            Register
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </section>

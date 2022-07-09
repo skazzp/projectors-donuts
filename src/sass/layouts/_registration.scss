@@ -1,15 +1,10 @@
 .section-registration {
-  padding-left: 20px;
-  padding-right: 20px;
   &__wrapper {
     background: var(--regestration-box-clr);
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0 0;
     padding: 0 10px;
-
-    @media screen and (min-width: 1280px) {
-    }
   }
 
   &__title {
@@ -29,6 +24,7 @@
       border-radius: 0;
       background: none;
       box-shadow: none;
+      padding: 0;
       //max-width: 705px;
     }
     &__container-text {

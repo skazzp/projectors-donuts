@@ -8,7 +8,7 @@
 }
 .nav-menu {
   position: relative;
-  z-index: 2;
+  z-index: -1;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@
 }
 .header-pic__container {
   position: absolute;
-  z-index: -2;
+  z-index: -5;
   @media screen and (max-width: 767px) {
     left: 0px;
     top: -16px;
@@ -53,7 +53,11 @@
     top: -20px;
   }
 }
-
+.spoon {
+  margin-top: 40px;
+  position: absolute;
+  z-index: -5;
+}
 .header-pic {
   max-width: 100%;
 }
@@ -88,11 +92,6 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
-}
-.menu-ham {
-  position: absolute;
-  display: inline-flex;
-  z-index: 101;
 }
 .menu-btn.is-open .menu__open {
   display: none;
@@ -135,7 +134,7 @@
   &.is-open {
     padding-top: 25px;
     display: flex;
-    z-index: 9;
+    z-index: 55;
     position: fixed;
     align-items: center;
     background-color: rgba(254, 243, 228, 0.9);
@@ -156,6 +155,10 @@
   font-weight: 500;
   line-height: 1.21;
   color: var(--main-txt-clr);
+  &:hover,
+  &:focus {
+    color: var(--btn-clr);
+  }
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     font-weight: 400;
@@ -219,4 +222,16 @@
 }
 .header__menu {
   display: flex;
+}
+.register__button {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }

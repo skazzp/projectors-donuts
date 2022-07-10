@@ -1,5 +1,5 @@
-<section class="section-registration">
-  <div class="container">
+<section class="section-registration" id="section-registration">
+  <div class="container section-registration--background">
     <div class="section-registration__wrapper">
       <h2 class="section-registration__title title">Registration</h2>
 
@@ -47,6 +47,28 @@
             Register
           </button>
         </form>
+        <picture>
+          <source
+            media="(min-width: 1280px"
+            srcset="
+              ./images/desktop/registration/desktop-footer-confetti.png    1x,
+              ./images/desktop/registration/desktop-footer-confetti@2x.png 2x
+            "
+          />
+          <source
+            media="min-width: 768px"
+            srcset="
+              ./images/tablet/registration/tablet-footer-confetti.png    1x,
+              ./images/tablet/registration/tablet-footer-confetti@2x.png 2x
+            "
+          />
+          <img
+            class="section-registration__confetti"
+            src="./images/tablet/registration/tablet-footer-confetti.png "
+            width="300"
+            alt="confetti"
+          />
+        </picture>
       </div>
     </div>
   </div>

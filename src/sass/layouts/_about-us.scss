@@ -15,11 +15,6 @@
 
 .about__img {
 
-    @media screen and (max-width: 767px) {
-        pointer-events: none;
-
-    }
-
     @media screen and (min-width: 768px) {
         position: absolute;
         top: 0;

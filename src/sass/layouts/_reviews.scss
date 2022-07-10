@@ -6,33 +6,33 @@
   background-size: cover;
   @media screen and (max-width: 767px) {
     max-width: 100%;
-    background-image: url(/src/images/mobile/reviews-bg/rewiews.png);
+    background-image: url(../images/mobile/reviews-bg/rewiews.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/mobile/reviews-bg/rewiews@2x.png);
+      background-image: url(../images/mobile/reviews-bg/rewiews@2x.png);
     }
   }
   @media screen and (min-width: 768px) {
     max-width: 1279px;
     width: 100%;
-    background-image: url(/src/images/tablet/reviews-bg/reviews.png);
+    background-image: url(../images/tablet/reviews-bg/reviews.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/tablet/reviews-bg/revews@2x.png);
+      background-image: url(../images/tablet/reviews-bg/revews@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
     max-width: 1600px;
-    background-image: url(/src/images/desktop/reviews-bg/vector.png);
+    background-image: url(../images/desktop/reviews-bg/vector.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/reviews-bg/vector@2x.png);
+      background-image: url(../images/desktop/reviews-bg/vector@2x.png);
     }
   }
 }
@@ -57,19 +57,17 @@
   width: 280px;
 }
 .reviews__rate {
-  display: block;
-  //   display: flex;
-  margin-left: 0;
-  margin-right: 0;
+  position: relative;
+  margin-bottom: 20px;
 
   //   sdfgsdfsdfsdfasdfasdf
 }
 .reviews__icon {
+  position: absolute;
   display: block;
-  margin-left: 0;
-  margin-right: 0;
-  align-items: center;
-  align-content: center;
+  left: 0;
+  right: 0;
+  transform: translateX(50%);
 }
 .reviews__name {
   margin-bottom: 8px;

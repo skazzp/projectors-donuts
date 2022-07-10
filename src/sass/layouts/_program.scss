@@ -161,7 +161,21 @@
     @media screen and (min-width: 1280px) {
         @include size-img (97px, 107px);
     }
+
 }
+
+.picture-box__item:hover>.donate-1::before,
+.picture-box__item:focus>.donate-1::before {
+    transform: translate(31%, -44%) rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+
+    @media screen and (min-width: 768px) {
+        transform: translate(42%, -40%) rotate(360deg);
+    }
+}
+
+
 
 .donate-2::before {
     transform: translate(31%, -43%);
@@ -178,6 +192,17 @@
 
     @media screen and (min-width: 1280px) {
         @include size-img (83px, 92px);
+    }
+}
+
+.picture-box__item:hover>.donate-2::before,
+.picture-box__item:focus>.donate-2::before {
+    transform: translate(31%, -43%) rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+
+    @media screen and (min-width: 768px) {
+        transform: translate(58%, -37%) rotate(360deg);
     }
 }
 
@@ -199,6 +224,17 @@
     }   
 }
 
+.picture-box__item:hover>.donate-3::before,
+.picture-box__item:focus>.donate-3::before {
+    transform: translate(31%, -49%) rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+
+    @media screen and (min-width: 768px) {
+        transform: translate(52%, -41%) rotate(360deg);
+    }
+}
+
 .donate-4::before {
     transform: translate(31%, -43%);
 
@@ -216,6 +252,18 @@
         @include size-img (83px, 92px);
     }
 }
+
+.picture-box__item:hover>.donate-4::before,
+.picture-box__item:focus>.donate-4::before {
+    transform: translate(31%, -43%) rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+
+    @media screen and (min-width: 768px) {
+        transform: translate(59%, -38%) rotate(360deg);
+    }
+}
+
 
 .picture-box__container {
     @include size-img (130px, 130px);

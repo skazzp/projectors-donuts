@@ -1,36 +1,36 @@
 .about {
-  @media screen and (min-width: 1280px) {
-    padding-top: 100px;
-    padding-bottom: 39px;
-  }
+    @media screen and (min-width: 1280px) {
+        padding-top: 100px;
+        padding-bottom: 39px;
+    }
 }
 
 .about__content {
-  @media screen and (min-width: 768px) {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-  }
+    @media screen and (min-width: 768px) {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .about__img {
-    
+
     @media screen and (max-width: 767px) {
         pointer-events: none;
-      
+
     }
 
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-  @media screen and (min-width: 1280px) {
-    top: -80px;
-    left: 122px;
-    z-index: -100;
-  }
+    @media screen and (min-width: 1280px) {
+        top: -39px;
+        left: 122px;
+        z-index: -100;
+    }
 }
 
 .about__text-wrap {
@@ -39,32 +39,37 @@
         margin-right: 25px;
     }
 
-  @media screen and (min-width: 1280px) {
-    max-width: 392px;
-    padding-right: 5px;
-    padding-top: 20px;
-  }
+    @media screen and (min-width: 1280px) {
+        max-width: 392px;
+        padding-right: 5px;
+        padding-top: 20px;
+        margin-right: 139px;
+    }
 }
 
 .about__text {
-  margin-top: 20px;
-  @media screen and (min-width: 1280px) {
-    margin-top: 22px;
-  }
+    margin-top: 20px;
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 22px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+    }
 }
 
 .hide {
-  display: none;
-}
-
-.about__text-add {
-  @media screen and (max-width: 480px) {
     display: none;
-  }
 }
 
 .about__text-add {
-  margin-top: 22px;
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.about__text-add {
+    margin-top: 22px;
 }
 
 .about__text-add {
@@ -73,4 +78,10 @@
     font-size: 18px;
     line-height: 22px;
     text-align: left;
+}
+
+.about__title {
+    @media screen and (min-width: 1280px) {
+        text-align: left;
+    }
 }

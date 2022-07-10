@@ -26,9 +26,9 @@
 
   position: relative;
 
-  display: flex;
+  @extend %flex-expanded;
   flex-direction: column;
-  justify-content: space-between;
+ 
 
   border-radius: 40px;
   background-color: var(--main-clr);
@@ -36,12 +36,7 @@
   background-repeat: no-repeat;
   background-size: contain;
     
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/mobile/price-bg/snot-mob@2x.png);
-  }
+  @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png));
 
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
@@ -56,13 +51,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px) / 3);
+    @include flex-basis(3, 15px);
   }
 
   @media screen and (min-width: 1280px) {
   padding: 28px 28px 40px 28px;
 
-  flex-basis: calc((100% - 64px) / 3);
+  @include flex-basis(3, 32px);
 
   background-repeat: no-repeat;
   background-size: contain, 66px 74px, 66px 74px;
@@ -207,6 +202,5 @@
 }
 
 .price-card__thumb {
-  display: flex;
-  justify-content: center;
+@extend %flex-centered;
 }

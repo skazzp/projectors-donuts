@@ -24,7 +24,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 32px) / 2);
+        @include flex-basis(2, 32px);
     }
 }
 
@@ -94,35 +94,32 @@
 .program__picture-box {
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 32px) / 2);
+        @include flex-basis(2, 32px);
         margin-top: 15px;
     }   
 }
 
 .picture-box__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-expanded;
     flex-wrap: wrap;
     row-gap: 24px;
     column-gap: 20px;
 
     @media screen and (min-width: 768px) {
-        // row-gap: 16px;
         column-gap: 32px;
     }
 }
 
 .picture-box__item {
-    display: flex;
-    justify-content: center;
-    flex-basis: calc((100% - 20px) / 2);
+    @extend %flex-centered;
+    @include flex-basis(2, 20px);
 
      &:nth-child(2n) {
         margin-top: 36px;
     }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 32px) / 2);
+        @include flex-basis(2, 32px);
 
         &:nth-child(2n) {
             margin-top: 51px;
@@ -143,8 +140,7 @@
     background-size: contain; 
 
     @media screen and (max-width: 767px) {
-        width: 80px;
-        height: 80px;
+        @include size-img (80px, 80px);
     }
 }
 
@@ -154,22 +150,16 @@
     background-image: 
     url(../images/mobile/programm/mobile-1-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: 
-            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
-    }
+    @include retina-bcg (url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    
 
     @media screen and (min-width: 768px) {
-        width: 82px;
-        height: 90px;
+        @include size-img (82px, 90px);
         transform: translate(42%, -40%);
     }
 
     @media screen and (min-width: 1280px) {
-        width: 97px;
-        height: 107px;
+        @include size-img (97px, 107px);
     }
 
 }
@@ -193,22 +183,15 @@
     background-image:
         url(../images/mobile/programm/mobile-2-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-2-cooking-donut@2x.png);
-    }
+        @include retina-bcg (url(../images/mobile/programm/mobile-2-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
-        width: 69px;
-        height: 76px;
+        @include size-img (69px, 76px);
         transform: translate(58%, -37%);
     }
 
     @media screen and (min-width: 1280px) {
-        width: 83px;
-        height: 92px;
+        @include size-img (83px, 92px);
     }
 }
 
@@ -229,22 +212,15 @@
     background-image: 
         url(../images/mobile/programm/mobile-3-cooking-donut.png);
     
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-3-cooking-donut@2x.png);
-    }
+    @include retina-bcg (url(../images/mobile/programm/mobile-3-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
-        width: 74px;
-        height: 82px;
+        @include size-img (74px, 82px);
         transform: translate(52%, -41%);
     }
 
     @media screen and (min-width: 1280px) {
-            width: 88px;
-            height: 97px;
+            @include size-img (88px, 97px);
     }   
 }
 
@@ -265,22 +241,15 @@
     background-image:
         url(../images/mobile/programm/mobile-4-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-4-cooking-donut@2x.png);
-    }
+        @include retina-bcg (url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
-        width: 70px;
-        height: 78px;
+        @include size-img (70px, 78px);
         transform: translate(59%, -38%);
     }
 
     @media screen and (min-width: 1280px) {
-        width: 83px;
-        height: 92px;
+        @include size-img (83px, 92px);
     }
 }
 
@@ -297,8 +266,7 @@
 
 
 .picture-box__container {
-    width: 130px;
-    height: 130px;
+    @include size-img (130px, 130px);
    
     padding-top: 50px;
     padding-bottom: 10px;
@@ -310,15 +278,13 @@
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
     @media screen and (min-width: 768px) {
-        width: 152px;
-        height: 152px;
+        @include size-img (152px, 152px);
 
         padding-top: 54px;
     }
     
     @media screen and (min-width: 1280px) {
-        width: 180px;
-        height: 180px;
+        @include size-img (180px, 180px);
 
         padding-top: 65px;
     }  
@@ -356,8 +322,7 @@
 }
 
 .picture-box__thumb {
-    display: flex;
-    justify-content: center;
+    @extend %flex-centered;
 }
 
 .picture__svg {

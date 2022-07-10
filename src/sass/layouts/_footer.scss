@@ -1,12 +1,12 @@
 .footer {
   padding-top: 50px;
   padding-bottom: 20px;
-  
-
   background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png);
   background-size: 87px 64px;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position:right bottom;
+  
+
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (-webkit-min-device-pixel-ratio: 2),
@@ -98,5 +98,9 @@
 .footer-contacts__link:focus::after {
   width: 100%;
 }
+
+
+
+
 
 

@@ -2,9 +2,9 @@
   padding-top: 50px;
   padding-bottom: 20px;
   background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png);
-  background-size: 113px 99px;
+  background-size: 30%;
   background-repeat: no-repeat;
-  background-position:right;
+  background-position:right bottom;
   
 
 
@@ -55,9 +55,20 @@
   font-style: normal;
   font-size: 16px;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   margin-top: 34px;
-  gap: 634px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 500px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    gap: 290px;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 60px;
+  }
 }
 
 
@@ -109,8 +120,9 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 83px;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     padding-bottom: 46px;
   }
 
 }
+

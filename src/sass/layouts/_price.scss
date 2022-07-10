@@ -112,9 +112,14 @@
       88px 96px;
       background-image: 
       url(../images/mobile/price-bg/snot-mob.png),
-      url(../images/desktop/price/donut1.png),
+      url(../images/mobile/programm/mobile-2-cooking-donut.png),
       url(../images/mobile/programm/mobile-1-cooking-donut.png),
-      url(../images/desktop/price/donut2.png);
+      url(../images/mobile/programm/mobile-4-cooking-donut.png);
+
+      transition-property: background-position, background-size, background-image;
+      transition-duration: 300ms, 300ms, 300ms;
+      transition-delay: 300ms, 0, 0;
+
     }
 }
 

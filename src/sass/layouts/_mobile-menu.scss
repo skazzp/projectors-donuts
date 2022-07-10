@@ -74,14 +74,18 @@
   font-weight: 500;
   line-height: 1.21;
   color: var(--main-txt-clr);
-  &:hover,
-  &:focus {
-    color: var(--btn-clr);
-  }
+  transition: color 300ms linear, transform 300ms linear;
+
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.22;
     text-align: left;
+
+    &:hover,
+    &:focus {
+      color: var(--btn-clr);
+      transform: scale(1.05);
+    }
   }
 }

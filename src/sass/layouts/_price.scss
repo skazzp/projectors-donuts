@@ -36,12 +36,7 @@
   background-repeat: no-repeat;
   background-size: contain;
     
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/mobile/price-bg/snot-mob@2x.png);
-  }
+  @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png));
 
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
@@ -85,16 +80,10 @@
         url(../images/desktop/price/donut3.png),
         url(../images/desktop/price/donut2.png);
 
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: 
-            url(../images/mobile/price-bg/snot-mob@2x.png),
+        @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
             url(../images/desktop/price/donut1@2x.png),
             url(../images/desktop/price/donut3@2x.png),
-            url(../images/desktop/price/donut2@2x.png);
-        }
+            url(../images/desktop/price/donut2@2x.png));
     }
 
     &--pos-second {
@@ -107,15 +96,9 @@
           url(../images/desktop/price/donut1.png),
           url(../images/desktop/price/donut3.png); 
 
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image:
-            url(../images/mobile/price-bg/snot-mob@2x.png),
+          @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
             url(../images/desktop/price/donut1@2x.png),
-            url(../images/desktop/price/donut3@2x.png);
-        }
+            url(../images/desktop/price/donut3@2x.png));
     }
    
     &--pos-third {
@@ -129,15 +112,9 @@
         url(../images/desktop/price/donut1.png),
         url(../images/desktop/price/donut3.png);
 
-        @media (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image:
-            url(../images/mobile/price-bg/snot-mob@2x.png),
+        @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
             url(../images/desktop/price/donut1@2x.png),
-            url(../images/desktop/price/donut3@2x.png);
-        }
+            url(../images/desktop/price/donut3@2x.png));
     }
   }
 }

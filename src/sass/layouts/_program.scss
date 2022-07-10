@@ -154,12 +154,8 @@
     background-image: 
     url(../images/mobile/programm/mobile-1-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: 
-            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
-    }
+    @include retina-bcg (url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    
 
     @media screen and (min-width: 768px) {
         width: 82px;
@@ -179,12 +175,7 @@
     background-image:
         url(../images/mobile/programm/mobile-2-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-2-cooking-donut@2x.png);
-    }
+        @include retina-bcg (url(../images/mobile/programm/mobile-2-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
         width: 69px;
@@ -204,12 +195,7 @@
     background-image: 
         url(../images/mobile/programm/mobile-3-cooking-donut.png);
     
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-3-cooking-donut@2x.png);
-    }
+    @include retina-bcg (url(../images/mobile/programm/mobile-3-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
         width: 74px;
@@ -229,12 +215,7 @@
     background-image:
         url(../images/mobile/programm/mobile-4-cooking-donut.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
-    }
+        @include retina-bcg (url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
 
     @media screen and (min-width: 768px) {
         width: 70px;

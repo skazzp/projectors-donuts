@@ -35,6 +35,8 @@
   background-image: url(../images/mobile/price-bg/snot-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include transition (background-position, background-size, background-image);
     
   @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png));
 
@@ -60,7 +62,10 @@
   @include flex-basis(3, 32px);
 
   background-repeat: no-repeat;
-  background-size: contain, 66px 74px, 66px 74px;
+  background-size: 
+    contain, 
+    66px 74px, 
+    66px 74px;
   }
 }
 
@@ -82,24 +87,13 @@
     url(../images/desktop/price/donut3.png),
     url(../images/desktop/price/donut2.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: 
-        url(../images/mobile/price-bg/snot-mob@2x.png),
+    @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
         url(../images/desktop/price/donut1@2x.png),
         url(../images/desktop/price/donut3@2x.png),
-        url(../images/desktop/price/donut2@2x.png);
-    }
+        url(../images/desktop/price/donut2@2x.png));
+
     &:hover ,
     &:focus {
-
-    background-position: 
-      top 0 left 0, 
-      top 403px left 0, 
-      top 257px right 24px, 
-      top 403px right 105px;
     background-size: 
       contain, 
       88px 96px, 
@@ -110,11 +104,11 @@
       url(../images/mobile/programm/mobile-2-cooking-donut.png),
       url(../images/mobile/programm/mobile-1-cooking-donut.png),
       url(../images/mobile/programm/mobile-4-cooking-donut.png);
-
-      transition-property: background-position, background-size, background-image;
-      transition-duration: 300ms, 300ms, 300ms;
-      transition-delay: 300ms, 0, 0;
-
+        
+      @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
+        url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
+        url(../images/mobile/programm/mobile-1-cooking-donut@2x.png),
+        url(../images/mobile/programm/mobile-4-cooking-donut@2x.png));
     }
 }
 
@@ -123,20 +117,32 @@
       top 0 left 0, 
       top 366px right 0, 
       top 448px left 0;
+  background-image: 
+    url(../images/mobile/price-bg/snot-mob.png),
+    url(../images/desktop/price/donut1.png),
+    url(../images/desktop/price/donut3.png); 
+
+  @include retina-bcg (
+    url(../images/mobile/price-bg/snot-mob@2x.png),
+    url(../images/desktop/price/donut1@2x.png),
+    url(../images/desktop/price/donut3@2x.png));
+
+  &:hover ,
+  &:focus {
+    background-size: 
+      contain, 
+      88px 96px,
+      88px 96px;
     background-image: 
       url(../images/mobile/price-bg/snot-mob.png),
-      url(../images/desktop/price/donut1.png),
-      url(../images/desktop/price/donut3.png); 
+      url(../images/mobile/programm/mobile-2-cooking-donut.png),
+      url(../images/mobile/programm/mobile-1-cooking-donut.png); 
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image:
-        url(../images/mobile/price-bg/snot-mob@2x.png),
-        url(../images/desktop/price/donut1@2x.png),
-        url(../images/desktop/price/donut3@2x.png);
-    }
+  @include retina-bcg (
+    url(../images/mobile/price-bg/snot-mob@2x.png),
+    url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
+    url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    }       
 }
 
 .price-card--pos-third {
@@ -150,15 +156,27 @@
     url(../images/desktop/price/donut1.png),
     url(../images/desktop/price/donut3.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image:
+    @include retina-bcg (
         url(../images/mobile/price-bg/snot-mob@2x.png),
         url(../images/desktop/price/donut1@2x.png),
-        url(../images/desktop/price/donut3@2x.png);
-    }
+        url(../images/desktop/price/donut3@2x.png));
+
+  &:hover ,
+  &:focus {
+    background-size: 
+      contain, 
+      88px 96px,
+      88px 96px;
+    background-image: 
+      url(../images/mobile/price-bg/snot-mob.png),
+      url(../images/mobile/programm/mobile-2-cooking-donut.png),
+      url(../images/mobile/programm/mobile-1-cooking-donut.png); 
+
+  @include retina-bcg (
+    url(../images/mobile/price-bg/snot-mob@2x.png),
+    url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
+    url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    }   
 }
 
 .price-card__list {

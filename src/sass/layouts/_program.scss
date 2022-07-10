@@ -1,9 +1,37 @@
 .program {
-    background-color: var(--primary-bg-color);
+    background-color: var(--regestration-box-clr);
+  
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+}
+
+.program__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 124px;
+        padding-right: 124px;
+    }
 }
 
 .program__article {
-    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+    margin-bottom: 55px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+.article__thumb {
+   @media screen and (min-width: 1280px) {
+        width: 392px;
+   }
 }
 
 .article__title {
@@ -15,38 +43,215 @@
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 20px; 
-     }
+        font-size: 36px;
+    }
 }
 
 .article__description {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
 }
 
 .article__description--last {
-    margin-bottom: 16px;
+    @media screem and (max-width: 1279px) {
+        margin-bottom: 16px;
+    }
 }
 
 .article__list {
     margin-bottom: 8px;
-  
 
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
 }
 
 .article__text:not(:last-child) {
-margin-bottom: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768) {
+        margin-bottom: 16px;
+    }
+}
+
+.article__text::before {
+    content:">";
+}
+
+.article__btn {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.program__picture-box {
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2);
+        margin-top: 15px;
+    }   
 }
 
 .picture-box__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 60px;
+    row-gap: 24px;
     column-gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        // row-gap: 16px;
+        column-gap: 32px;
+    }
 }
 
 .picture-box__item {
+    display: flex;
+    justify-content: center;
+    flex-basis: calc((100% - 20px) / 2);
+
+     &:nth-child(2n) {
+        margin-top: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2);
+
+        &:nth-child(2n) {
+            margin-top: 51px;
+        }
+    }
+}
+
+.picture-box__container::before {
+    content: "";
+    display: block;
+    
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    
+    background-repeat: no-repeat;
+    background-size: contain; 
+
+    @media screen and (max-width: 767px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.donate-1::before {
+    transform: translate(31%, -44%);
+
+    background-image: 
+    url(../images/mobile/programm/mobile-1-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: 
+            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 82px;
+        height: 90px;
+        transform: translate(42%, -40%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 97px;
+        height: 107px;
+    }
+}
+
+.donate-2::before {
+    transform: translate(31%, -43%);
+
+    background-image:
+        url(../images/mobile/programm/mobile-2-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-2-cooking-donut@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 69px;
+        height: 76px;
+        transform: translate(58%, -37%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 83px;
+        height: 92px;
+    }
+}
+
+.donate-3::before {
+    transform: translate(31%, -49%);
+
+    background-image: 
+        url(../images/mobile/programm/mobile-3-cooking-donut.png);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-3-cooking-donut@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 74px;
+        height: 82px;
+        transform: translate(52%, -41%);
+    }
+
+    @media screen and (min-width: 1280px) {
+            width: 88px;
+            height: 97px;
+    }   
+}
+
+.donate-4::before {
+    transform: translate(31%, -43%);
+
+    background-image:
+        url(../images/mobile/programm/mobile-4-cooking-donut.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/mobile/programm/mobile-1-cooking-donut@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 70px;
+        height: 78px;
+        transform: translate(59%, -38%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 83px;
+        height: 92px;
+    }
+}
+
+.picture-box__container {
     width: 130px;
     height: 130px;
-
+   
     padding-top: 50px;
     padding-bottom: 10px;
     position: relative;
@@ -59,45 +264,34 @@ margin-bottom: 8px;
     @media screen and (min-width: 768px) {
         width: 152px;
         height: 152px;
+
+        padding-top: 54px;
     }
     
     @media screen and (min-width: 1280px) {
         width: 180px;
         height: 180px;
-    }
-    
+
+        padding-top: 65px;
+    }  
 }
-
-.picture-box__item::before {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    top: 0;
-    left: 0;
-
-    transform: translate(25%, -50%);
-
-    position: absolute;
-    background-image: url(../images/mobile/programm/mobile-1-cooking-donut.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    outline: 1px solid red;
-    }
 
 .picture-box__title {
     margin-bottom: 4px;
-
     text-align: center;
     font-family: var(--title-fnt);
     font-size: 18px;
 
     color: var(--secondary-txt-color);
 
-    @media screen and (min-width: 1280px) {
-        font-size: 24px;;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
     }
 
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
 }
 
 .picture-box__description {
@@ -107,12 +301,35 @@ margin-bottom: 8px;
 
     font-size: 14px;
     line-height: 1.22;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
-.picture__thumb {
+.picture-box__thumb {
     display: flex;
     justify-content: center;
 }
 
+.picture__svg {
+    display: none;
 
+    @media screen and (max-width: 767px) {  
+        &--mobile {
+            display: block;
+        }
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1279px) {  
+        &--tablet {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {  
+        &--desktop {
+            display: block;
+        }
+    }
+}

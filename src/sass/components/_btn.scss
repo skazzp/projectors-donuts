@@ -1,5 +1,5 @@
 .btn {
-  width: 145px;
+  min-width: 145px;
   height: 40px;
   padding: 8px 47px;
   background-color: var(--btn-clr);
@@ -8,8 +8,49 @@
   font-weight: 400;
   font-size: 18px;
   line-height: calc(23 / 18);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   color: var(--btn-txt-clr);
+  transition-property: color, background-color, font-weight, letter-spacing, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    color: var(--btn-clr);
+    background-color: var(--btn-txt-clr);
+    border-color: var(--btn-clr);
+    border-width: 1px;
+    border-style: solid;
+  }
 }
+
+
+
 // dsctp only in header width 158px height 45px
+
+.btn-read-more {
+  padding: 0;
+
+  font-size: 18px;
+  font-family: var(--title-fnt);
+  color: var(--btn-clr);
+  border: none;
+  background-color: transparent;
+}
+
+.btn-read-more .btn-read-more--open {
+  display: none;
+}
+
+.btn-read-more.is-open {
+  .btn-read-more--open {
+    display: block;
+  }
+  .btn-read-more--close {
+    display: none;
+  }
+}
+

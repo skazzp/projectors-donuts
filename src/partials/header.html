@@ -1,151 +1,173 @@
 <header>
-  <div class="">
-    <div class="header__container container">
-      <button
-        class="menu-btn hamburger hamburger--stand"
-        type="button"
-        aria-label="Меню"
-        aria-controls="navigation"
-        data-menu-button
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <div class="header-pic__container">
-        <picture class="header-pic">
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/desktop/header/header-donuts@1x.png 1x,
-              ./images/desktop/header/header-donuts@2x.png 2x
-            "
-            sizes="(min-width: 1280px) 716px, 100vw" />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/tablet/header/header-donuts@1x.png 1x,
-              ./images/tablet/header/header-donuts@2x.png 2x
-            "
-            sizes="(min-width: 768px) 768px, 100vw" />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./images/mobile/header/header-donuts@1x.png 1x,
-              ./images/mobile/header/header-donuts@2x.png 2x
-            " />
-          <img src="./images/mobile/header/header-donuts@1x.png" alt="Пончики!"
-        /></picture>
-      </div>
-      <div class="menu-box" data-menu>
-        <a class="menu-box__link" href="./index.html">
-          <svg class="menu-box__logo">
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <ul class="list menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#aboutus">About us</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#program">Program</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#speakers">Speakers</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#price">Price</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#reviews">Reviews</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </div>
-      <div class="menu__nav-container">
-        <a class="logo-link" href="./index.html">
-          <svg class="logo">
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <ul class="list desktop-menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#aboutus">About us</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#program">Program</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#speakers">Speakers</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#price">Price</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#reviews">Reviews</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </div>
-      <div class="register">
-        <h1 class="header__title">Donut Masterclass with the Donut King</h1>
-        <h2 class="register__title">Hosted by Eva Green</h2>
-        <a href="#register">Register</a>
-        <ul class="list socials">
-          <li class="socials__item">
-            <a
-              class="socials__link"
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials__icon" width="16px" height="16px">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a
-              class="socials__link"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials__icon" width="16px" height="16px">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a
-              class="socials__link"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials__icon" width="16px" height="16px">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- <button
-      class="menu-btn"
+  <div class="header__container container">
+    <picture class="header-bg">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/desktop/header-bg/desktop-header-bg.png    1x,
+          ./images/desktop/header-bg/desktop-header-bg@2x.png 2x
+        "
+        sizes="(min-width: 1280px) 716px, 100vw" />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/tablet/header-bg/tablet-header-bg.png    1x,
+          ./images/tablet/header-bg/tablet-header-bg@2x.png 2x
+        "
+        sizes="(min-width: 768px) 768px, 100vw" />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/mobile/header-bg/mobile-header-bg.png    1x,
+          ./images/mobile/header-bg/mobile-header-bg@2x.png 2x
+        "
+        sizes="(max-width: 767px) 480px, 100vw"
+        width="480px" />
+      <img src="./images/mobile/header/header-donuts@1x.png" alt="DONUTS!"
+    /></picture>
+    <button
+      class="menu-btn hamburger hamburger--stand"
       type="button"
-      aria-label="Переключатель меню"
-      aria-expanded="false"
+      aria-label="Меню"
+      aria-controls="navigation"
       data-menu-button
     >
-      <svg width="20px" height="20px">
-        <use class="menu__open" href="./images/icons.svg#icon-menu"></use>
-        <use class="menu__close" href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button> -->
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="header-pic__container">
+      <picture class="header-pic">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/desktop/header/header-donuts@1x.png 1x,
+            ./images/desktop/header/header-donuts@2x.png 2x
+          "
+          sizes="(min-width: 1280px) 716px, 100vw" />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/tablet/header/header-donuts@1x.png 1x,
+            ./images/tablet/header/header-donuts@2x.png 2x
+          "
+          sizes="(min-width: 768px) 768px, 100vw" />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/mobile/header/header-donuts@1x.png 1x,
+            ./images/mobile/header/header-donuts@2x.png 2x
+          " />
+        <img src="./images/mobile/header/header-donuts@1x.png" alt="DONUTS!"
+      /></picture>
+    </div>
+    <div class="mob-menu" data-menu>
+      <a class="mob-menu__link" href="./index.html">
+        <svg class="mob-menu__logo">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="list menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#aboutus">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#program">Program</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#speakers">Speakers</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#price">Price</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#reviews">Reviews</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu__nav-container">
+      <a class="logo-link" href="./index.html">
+        <svg class="logo">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="list desktop-menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#aboutus">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#program">Program</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#speakers">Speakers</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#price">Price</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#reviews">Reviews</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-content">
+      <h1 class="header__title">Donut Masterclass with the Donut King</h1>
+      <h2 class="header-content__title">Hosted by Eva Green</h2>
+      <a class="header-content__button btn link" href="#register">Register</a>
+      <ul class="list socials">
+        <li class="socials__item">
+          <a
+            class="socials__link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials__icon" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials__icon" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials__icon" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <picture class="header-content__pic">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/desktop/header/header-spoon@1x.png 1x,
+            ./images/desktop/header/header-spoon@2x.png 2x
+          "
+          sizes="(min-width: 1280px) 716px, 100vw" />
+
+        <img src="./images/desktop/header/header-spoon@1x.png" alt="DONUTS!"
+      /></picture>
+    </div>
+  </div>
 </header>

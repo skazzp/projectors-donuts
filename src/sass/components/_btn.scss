@@ -1,15 +1,62 @@
 .btn {
-  width: 145px;
+  min-width: 145px;
   height: 40px;
   padding: 8px 47px;
   background-color: var(--btn-clr);
   border-radius: 25px;
-  border-color: transparent;
+
+  border: 1px solid transparent;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(23 / 18);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   color: var(--btn-txt-clr);
+  // font-weight, letter-spacing,
+  transition-property: color, background-color, border, transform, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // border-width: 1px;
+  // border-color: transparent;
+  // transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    // font-weight: 700;
+    // letter-spacing: 0.07em;
+    // border-color: var(--btn-clr);
+    // border-width: 1px;
+    // border-style: solid;
+    color: var(--btn-clr);
+    background-color: var(--btn-txt-clr);
+    border: 1px solid var(--btn-clr);
+    box-shadow: 0px 3px 3px var(--btn-clr);
+    transform: translateY(-2px);
+  }
 }
+
 // dsctp only in header width 158px height 45px
+
+.btn-read-more {
+  padding: 0;
+
+  font-size: 18px;
+  font-family: var(--title-fnt);
+  color: var(--btn-clr);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-read-more .btn-read-more--open {
+  display: none;
+}
+
+.btn-read-more.is-open {
+  .btn-read-more--open {
+    display: block;
+  }
+  .btn-read-more--close {
+    display: none;
+  }
+}

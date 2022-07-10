@@ -1,0 +1,33 @@
+@mixin transition ($property...) {
+    transition-property: $property;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin retina-bcg ($url...) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: 
+            $url;
+    }
+}
+
+@mixin size-img ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-basis ($quantity, $indent) {
+    flex-basis: calc((100% - (($quantity - 1) * $indent)) / $quantity);
+}
+
+%flex-centered {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-expanded {
+    display: flex;
+    justify-content: space-between;
+}

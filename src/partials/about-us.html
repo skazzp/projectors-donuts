@@ -8,8 +8,8 @@
                 <source srcset="./images/tablet/about/about-tablet.png 1x, ./images/tablet/about/about-tablet@2x.png 2x"
                     media="(min-width: 768px)" type="image/png" />
                 <source srcset="./images/mobile/about/about-mobile.png 1x, ./images/mobile/about/about-mobile@2x.png 2x"
-                    media="(min-width: 767px)" type="image/png" />
-                <img src="./images/mobile/about/about-mobile.png " alt="сupcake box" width="502" height="535" />
+                    media="(max-width: 767px)" type="image/png" />
+                <img src="./images/mobile/about/about-mobile.png "/>
             </picture>
         </div>
         <div class="about__text-wrap">
@@ -29,9 +29,12 @@
                 your eyes! We love what we do and believe you will enjoy our cooking
                 atmosphere!
             </p>
-            <p>
-                <span class="hide">Read more</span>
-            </p>
+
+            <button class="btn-read-more" type="button">
+                <span class="btn-read-more btn-read-more--close">Read more</span>
+                <span class="btn-read-more btn-read-more--open">Less</span>
+            </button>
+
         </div>
 
 

@@ -13,4 +13,21 @@
     }
 }
 
+@mixin size-img ($width, $height) {
+    width: $width;
+    height: $height;
+}
 
+@mixin flex-basis ($quantity, $indent) {
+    flex-basis: calc((100% - (($quantity - 1) * $indent)) / $quantity);
+}
+
+%flex-centered {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-expanded {
+    display: flex;
+    justify-content: space-between;
+}

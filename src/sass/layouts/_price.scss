@@ -70,7 +70,7 @@
 }
 
 .price-card--pos-first {
-
+  @media screen and (min-width: 1280px) {
   background-position: 
     top 0 left 0, 
     top 403px left 0, 
@@ -110,9 +110,11 @@
         url(../images/mobile/programm/mobile-1-cooking-donut@2x.png),
         url(../images/mobile/programm/mobile-4-cooking-donut@2x.png));
     }
+  }
 }
 
 .price-card--pos-second {
+  @media screen and (min-width: 1280px) {
   background-position: 
       top 0 left 0, 
       top 366px right 0, 
@@ -142,10 +144,12 @@
     url(../images/mobile/price-bg/snot-mob@2x.png),
     url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
     url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
-    }       
+    }  
+  }     
 }
 
 .price-card--pos-third {
+  @media screen and (min-width: 1280px) {
   background-position: 
     top 0 left 0, 
     top 464px right 0, 
@@ -176,7 +180,8 @@
     url(../images/mobile/price-bg/snot-mob@2x.png),
     url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
     url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
-    }   
+    }
+  }  
 }
 
 .price-card__list {

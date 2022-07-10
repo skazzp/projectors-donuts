@@ -3,9 +3,9 @@
   background-color: var(--regestration-box-clr);
 }
 
-.speakers__box {
+.speakers__container {
   position: relative;
-  margin-top: 38px;
+  margin-top: 36px;
   background-color: var(--main-clr);
   border-radius: 20px;
   width: 100%;
@@ -71,12 +71,27 @@
 }
 
 .speakers__list {
-  display: flex;
+  @extend %flex-expanded;
   flex-wrap: wrap;
   row-gap: 32px;
   column-gap: 20px;
   justify-content: space-between;
+  // @media screen and (min-width: 768px) {
+  //   column-gap: 32;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   column-gap: 112;
+  // }
+}
+.speakers__item {
+  @extend %flex-centered;
+  // flex-direction: column;
+  @include flex-basis(2, 20px);
   @media screen and (min-width: 768px) {
+    @include flex-basis(4, 32px);
+  }
+  @media screen and (min-width: 1280px) {
+    @include flex-basis(4, 105px);
   }
 }
 .speakers__img {

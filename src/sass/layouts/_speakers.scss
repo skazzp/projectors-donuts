@@ -16,12 +16,12 @@
   background-size: contain;
   @media screen and (max-width: 767px) {
     max-width: 100%;
-    background-image: url(/src/images/mobile/speakers-bg/vector.png);
+    background-image: url(../images/mobile/speakers-bg/vector.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/mobile/speakers-bg/vector@2x.png);
+      background-image: url(../images/mobile/speakers-bg/vector@2x.png);
     }
   }
   @media screen and (min-width: 768px) {
@@ -31,12 +31,12 @@
     margin-top: 0;
     padding-top: 155px;
     padding-bottom: 40px;
-    background-image: url(/src/images/tablet/speakers-bg/vector.png);
+    background-image: url(../images/tablet/speakers-bg/vector.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/tablet/speakers-bg/vector@2x.png);
+      background-image: url(../images/tablet/speakers-bg/vector@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
@@ -44,12 +44,12 @@
     padding-top: 232px;
     padding-left: 105px;
     padding-right: 105px;
-    background-image: url(/src/images/desktop/speakers-bg/vector.png);
+    background-image: url(../images/desktop/speakers-bg/vector.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/speakers-bg/vector@2x.png);
+      background-image: url(../images/desktop/speakers-bg/vector@2x.png);
     }
   }
 }

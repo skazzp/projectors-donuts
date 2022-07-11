@@ -1,5 +1,9 @@
 .price {
-  background-color: var(--regestration-box-clr);
+  background-color: var(--btn-txt-clr);
+
+  @media screen and (min-width: 1280px) {
+    background-color: var(--regestration-box-clr);
+  }
 }
 
 .price__title {

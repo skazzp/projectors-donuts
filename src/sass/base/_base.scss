@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.25;
   padding-bottom: 0;
+
   background-color: var(--regestration-box-clr);
   background-repeat: no-repeat;
   background-position: center top, center bottom 211px;
@@ -38,6 +39,7 @@ body {
     }
   }
   @media screen and (min-width: 1280px) {
+    overflow-x: hidden;
     background-position: center top, right bottom;
     background-size: 100% 1035px, 100% 2073px;
     background-image: url(../images/desktop/header-bg/desktop-header-bg@1x.png),
@@ -54,7 +56,6 @@ body {
 .section {
   padding-top: 16px;
 
-
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
@@ -70,7 +71,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 480px;
-
 
   @media screen and (min-width: 768px) {
     max-width: 768px;

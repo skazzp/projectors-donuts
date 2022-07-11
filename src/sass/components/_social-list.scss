@@ -8,8 +8,14 @@
 .socials__link {
   display: inline-flex;
   fill: var(--main-txt-clr);
+  transition: fill 300ms linear, transform 300ms linear,
+    background-color 300ms linear;
+  padding: 3px;
+  border-radius: 4px;
   &:hover,
   &:focus {
-    fill: var(--btn-clr);
+    fill: var(--btn-txt-clr);
+    transform: scale(1.2);
+    background-color: var(--btn-clr);
   }
 }

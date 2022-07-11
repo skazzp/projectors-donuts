@@ -1,5 +1,36 @@
-<section class="reviews__section">
-  <div class="container">
+<section class="reviews__section section" id="reviews">
+  <div class="reviews__container container">
+    <picture class="reviews-bg__img">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/desktop/reviews-bg/bg.png    1x,
+          ./images/desktop/reviews-bg/bg@2x.png 2x
+        "
+        sizes="(min-width: 1280px) 1280px, 100vw"
+        width="1280px"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/tablet/reviews-bg/bg.png    1x,
+          ./images/tablet/reviews-bg/bg@2x.png 2x
+        "
+        sizes="(min-width: 768px) 768px, 100vw"
+        width="768px"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/mobile/reviews-bg/bg.png    1x,
+          ./images/mobile/reviews-bg/bg@2x.png 2x
+        "
+        sizes="(max-width: 767px) 480px, 100vw"
+        width="480px"
+      />
+      <img src="./images/mobile/reviews-bg/bg.png" alt="background" />
+    </picture>
     <h2 class="reviews__title title">Reviews</h2>
     <article class="reviews__article">
       <ul class="reviews__list list">
@@ -8,38 +39,38 @@
             <source
               media="(min-width: 1200px)"
               srcset="
-                /src/images/desktop/reviews/desktop-reviews-john.png    1x,
-                /src/images/desktop/reviews/desktop-reviews-john@2x.png 2x
+                ./images/desktop/reviews/john.png    1x,
+                ./images/desktop/reviews/john@2x.png 2x
               "
             />
 
             <source
               media="(min-width: 768px)"
               srcset="
-                /src/images/tablet/reviews/tablet-reviews-john.png    1x,
-                /src/images/tablet/reviews/tablet-reviews-john@2x.png 2x
+                ./images/tablet/reviews/john.png    1x,
+                ./images/tablet/reviews/john@2x.png 2x
               "
             />
 
             <source
               media="(max-width: 767px)"
               srcset="
-                /src/images/desktop/reviews/desktop-reviews-john.png    1x,
-                /src/images/desktop/reviews/desktop-reviews-john@2x.png 2x
+                ./images/desktop/reviews/john.png    1x,
+                ./images/desktop/reviews/john@2x.png 2x
               "
             />
             <img
-              src="/src/images/desktop/reviews/desktop-reviews-john.png"
-              alt=""
+              src="./images/desktop/reviews/john.png"
+              alt="women"
               width="280px"
               height="280px"
             />
           </picture>
-          <div class="reviews__rate">
-            <svg class="reviews__icon" width="136" height="24">
-              <use href="./images/icons.svg#rate-4"></use>
-            </svg>
-          </div>
+
+          <svg class="reviews__icon" width="136" height="24">
+            <use href="./images/icons.svg#rate-4"></use>
+          </svg>
+
           <div class="reviews__meta">
             <h3 class="reviews__name">John</h3>
             <p class="reviews__comment">
@@ -57,38 +88,38 @@
             <source
               media="(min-width: 1200px)"
               srcset="
-                /src/images/desktop/reviews/desktop-reviews-will.png    1x,
-                /src/images/desktop/reviews/desktop-reviews-will@2x.png 2x
+                ./images/desktop/reviews/will.png    1x,
+                ./images/desktop/reviews/will@2x.png 2x
               "
             />
 
             <source
               media="(min-width: 768px)"
               srcset="
-                /src/images/tablet/reviews/tablet-reviews-will.png    1x,
-                /src/images/tablet/reviews/tablet-reviews-will@2x.png 2x
+                ./images/tablet/reviews/will.png    1x,
+                ./images/tablet/reviews/will@2x.png 2x
               "
             />
 
             <source
               media="(max-width: 767px)"
               srcset="
-                /src/images/mobile/reviews/mobile-reviews-will.png    1x,
-                /src/images/mobile/reviews/mobile-reviews-will@2x.png 2x
+                ./images/mobile/reviews/will.png    1x,
+                ./images/mobile/reviews/will@2x.png 2x
               "
             />
             <img
-              src="/src/images/mobile/reviews/mobile-reviews-will.png"
-              alt=""
+              src="./images/mobile/reviews/will.png"
+              alt="women"
               width="280px"
               height="280px"
             />
           </picture>
-          <div class="reviews__rate">
-            <svg class="reviews__icon" width="136" height="24">
-              <use href="./images/icons.svg#rate-5"></use>
-            </svg>
-          </div>
+
+          <svg class="reviews__icon" width="136" height="24">
+            <use href="./images/icons.svg#rate-5"></use>
+          </svg>
+
           <div class="reviews__meta">
             <h3 class="reviews__name">Will</h3>
             <p class="reviews__comment">
@@ -106,38 +137,38 @@
             <source
               media="(min-width: 1200px)"
               srcset="
-                /src/images/desktop/reviews/desktop-reviews-elisabeth.png    1x,
-                /src/images/desktop/reviews/desktop-reviews-elisabeth@2x.png 2x
+                ./images/desktop/reviews/elisabeth.png    1x,
+                ./images/desktop/reviews/elisabeth@2x.png 2x
               "
             />
 
             <source
               media="(min-width: 768px)"
               srcset="
-                /src/images/tablet/reviews/tablet-reviews-elisabeth.png    1x,
-                /src/images/tablet/reviews/tablet-reviews-elisabeth@2x.png 2x
+                ./images/tablet/reviews/elisabeth.png    1x,
+                ./images/tablet/reviews/elisabeth@2x.png 2x
               "
             />
 
             <source
               media="(max-width: 767px)"
               srcset="
-                /src/images/mobile/reviews/mobile-reviews-will.png    1x,
-                /src/images/mobile/reviews/mobile-reviews-will@2x.png 2x
+                ./images/mobile/reviews/will.png    1x,
+                ./images/mobile/reviews/will@2x.png 2x
               "
             />
             <img
-              src="/src/images/desktop/reviews/desktop-reviews-elisabeth.png"
-              alt=""
+              src="./images/desktop/reviews/elisabeth.png"
+              alt="women"
               width="280px"
               height="280px"
             />
           </picture>
-          <div class="reviews__rate">
-            <svg class="reviews__icon" width="136" height="24">
-              <use href="./images/icons.svg#rate-5"></use>
-            </svg>
-          </div>
+
+          <svg class="reviews__icon" width="136" height="24">
+            <use href="./images/icons.svg#rate-5"></use>
+          </svg>
+
           <div class="reviews__meta">
             <h3 class="reviews__name">Elisabeth</h3>
             <p class="reviews__comment">

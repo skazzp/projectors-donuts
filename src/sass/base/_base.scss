@@ -26,7 +26,7 @@ body {
       url(../images/mobile/reviews-bg/bg@2x.png);
   }
   @media screen and (min-width: 768px) {
-    background-position: center top, center bottom 101px;
+    background-position: center top, right bottom 101px;
     background-size: 100% 622px, 100% 1456px;
     background-image: url(../images/tablet/header-bg/tablet-header-bg.png),
       url(../images/tablet/reviews-bg/bg.png);
@@ -38,7 +38,7 @@ body {
     }
   }
   @media screen and (min-width: 1280px) {
-    background-position: center top, center bottom;
+    background-position: center top, right bottom;
     background-size: 100% 1035px, 100% 2073px;
     background-image: url(../images/desktop/header-bg/desktop-header-bg@1x.png),
       url(../images/desktop/reviews-bg/bg.png);

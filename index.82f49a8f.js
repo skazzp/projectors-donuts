@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),a=(document.querySelector("#header"),document.querySelector("body"));e.addEventListener("click",(function(){var o="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-active"),e.setAttribute("aria-expanded",!o),t.classList.toggle("is-open"),a.classList.toggle("no-scroll")}))}();
-//# sourceMappingURL=index.82f49a8f.js.map

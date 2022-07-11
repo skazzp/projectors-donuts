@@ -10,6 +10,7 @@
           name="email"
           placeholder="Email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
         />
       </label>
       <label class="form-contact__lable">
@@ -18,9 +19,12 @@
           type="text"
           name="question"
           placeholder="Type your question"
+          required
         />
       </label>
-      <button class="btn form-contact__submit" type="submit">Send</button>
+      <button class="btn form-contact__submit" type="submit" aria-label="Send">
+        Send
+      </button>
     </form>
   </div>
 </section>

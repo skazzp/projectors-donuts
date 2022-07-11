@@ -38,6 +38,10 @@
 // dsctp only in header width 158px height 45px
 
 .btn-read-more {
+ 
+  @media screen and (min-width: 769px) {
+    display: none;
+}
   padding: 0;
 
   font-size: 18px;
@@ -48,9 +52,9 @@
   cursor: pointer;
 }
 
-.btn-read-more .btn-read-more--open {
-  display: none;
-}
+// .btn-read-more .btn-read-more--open {
+//   display: none;
+// }
 
 .btn-read-more.is-open {
   .btn-read-more--open {

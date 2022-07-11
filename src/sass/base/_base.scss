@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -10,10 +14,14 @@ body {
   line-height: 1.25;
   padding-bottom: 0;
   background-color: var(--regestration-box-clr);
+
+
+  
 }
 
 .section {
   padding-top: 16px;
+
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
@@ -30,6 +38,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 480px;
+
 
   @media screen and (min-width: 768px) {
     max-width: 768px;

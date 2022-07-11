@@ -86,3 +86,12 @@
 .is-hidden {
     display: none;
 }
+
+.box {
+    animation: 5s show ease;
+  }
+  
+  @keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

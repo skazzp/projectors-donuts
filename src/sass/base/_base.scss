@@ -13,19 +13,21 @@ body {
   font-weight: 400;
   line-height: 1.25;
   padding-bottom: 0;
-
+  overflow-x: hidden;
   background-color: var(--regestration-box-clr);
   background-repeat: no-repeat;
   background-position: center top, right bottom 211px;
   background-size: 100% 460px, 100% 1303px;
   background-image: url(../images/mobile/header-bg/mobile-header-bg.png),
     url(../images/mobile/reviews-bg/bg.png);
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/mobile/header-bg/mobile-header-bg@2x.png),
       url(../images/mobile/reviews-bg/bg@2x.png);
   }
+
   @media screen and (min-width: 768px) {
     background-position: center top, right bottom 101px;
     background-size: 100% 622px, 100% 1456px;
@@ -38,8 +40,8 @@ body {
         url(../images/tablet/reviews-bg/bg@2x.png);
     }
   }
+
   @media screen and (min-width: 1280px) {
-    overflow-x: hidden;
     background-position: center top, right bottom;
     background-size: 100% 1035px, 100% 2073px;
     background-image: url(../images/desktop/header-bg/desktop-header-bg@1x.png),
@@ -77,6 +79,7 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     padding-left: 16px;

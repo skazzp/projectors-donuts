@@ -93,3 +93,41 @@
     display: none;
 }
 
+.swing:hover
+{
+    -webkit-animation: swing 10s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.swing2:hover
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 8;
+    animation-iteration-count: 5;
+}
+
+.square {
+    width: 502px;
+    height: 535px;
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+    animation: move 3s linear alternate;
+}
+ 
+ 
+ @keyframes move {
+    0% {
+        top: 200px;
+    }
+    100% {
+        top: 0px;
+    }
+}

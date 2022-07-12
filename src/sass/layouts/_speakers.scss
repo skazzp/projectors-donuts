@@ -78,14 +78,13 @@
   display: block;
   margin-bottom: 12px;
   border-radius: 50%;
-  // webkit-filter: blur(4px);
-  // filter: blur(4px);
-  // &:hover {
-  //   webkit-filter: blur(0px);
-  //   filter: blur(0px);
-  // }
+  border: 4px solid transparent;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
+  }
+  .speakers__item:hover &,
+  .speakers__item:focus & {
+    box-shadow: 0 0 30px #ab816c;
   }
 }
 .speakers__meta {

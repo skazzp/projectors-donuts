@@ -1,8 +1,7 @@
-.footer-container {
+.footer {
   padding-top: 50px;
   padding-bottom: 20px;
   background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png);
-  background-size: 30%;
   background-repeat: no-repeat;
   background-position:right bottom;
 
@@ -83,6 +82,7 @@
 .footer-contacts__icon {
   margin-right: 3px;
   fill: currentColor;
+  vertical-align: middle;
 
 }
 

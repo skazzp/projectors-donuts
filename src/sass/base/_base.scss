@@ -43,14 +43,16 @@ body {
 
   @media screen and (min-width: 1280px) {
     background-color: var(--regestration-box-clr);
-    background-position: center top, right bottom;
-    background-size: 100% 1035px, 100% 2073px;
-    background-image: url(../images/desktop/header-bg/desktop-header-bg@1x.png),
+    background-position: left 0px top 541px, center top, right bottom;
+    background-size: auto, 100% 1035px, 100% 1950px;
+    background-image: url(../images/desktop/header-bg/header-spoon@1x.png),
+      url(../images/desktop/header-bg/desktop-header-bg@1x.png),
       url(../images/desktop/reviews-bg/bg.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/header-bg/desktop-header-bg@2x.png),
+      background-image: url(../images/desktop/header-bg/header-spoon@2x.png),
+        url(../images/desktop/header-bg/desktop-header-bg@2x.png),
         url(../images/desktop/reviews-bg/bg@2x.png);
     }
   }

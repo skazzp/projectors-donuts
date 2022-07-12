@@ -21,7 +21,6 @@
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/contact/tablet-footer-spoon-and-flour.png);
-    background-size: contain;
     padding-bottom: 83px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -35,7 +34,7 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 82px;
-    padding-bottom: 232px;
+    padding-bottom: 79px;
     background-image: url(../images/desktop/contact/desktop-footer-spoon-and-flour.png);
     background-position: right;
     
@@ -82,7 +81,7 @@
 .footer-contacts__icon {
   margin-right: 3px;
   fill: currentColor;
-  vertical-align: middle;
+  align-items: center;
 
 }
 
@@ -120,4 +119,5 @@
 .footer-contacts__link:focus::after {
   width: 100%;
 }
+
 

@@ -14,6 +14,11 @@
 }
 
 .about__img {
+    @media screen and (max-width: 767px) {
+        position: relative;
+        top: -35;
+        left: 0;
+    }
 
     @media screen and (min-width: 768px) {
         position: absolute;
@@ -100,7 +105,7 @@
     left: 0;
     z-index: -1;
  
-    animation: move 3s linear alternate;
+    animation: move 1.5s linear alternate;
 }
  
  

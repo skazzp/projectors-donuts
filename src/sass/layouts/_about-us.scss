@@ -67,19 +67,25 @@
     margin-top: 22px;
 }
 
+.about__text-add {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+}
+
 // .about__text-add {
 //     margin-top: 22px;
 //     margin-bottom: 16px;
 //     font-size: 18px;
 //     line-height: 22px;
 //     text-align: left;
-    
+
 // }
 
 .about__title {
     @media screen and (min-width: 768px) {
         text-align: left;
-        
+
     }
 }
 
@@ -89,9 +95,14 @@
 
 .box {
     animation: 5s show ease;
-  }
-  
-  @keyframes show {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

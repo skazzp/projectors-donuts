@@ -14,7 +14,7 @@ body {
   line-height: 1.25;
   padding-bottom: 0;
   overflow-x: hidden;
-  background-color: var(--regestration-box-clr);
+  background-color: var(--btn-txt-clr);
   background-repeat: no-repeat;
   background-position: center top, right bottom 211px;
   background-size: 100% 460px, 100% 1303px;
@@ -42,6 +42,7 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
+    background-color: var(--regestration-box-clr);
     background-position: center top, right bottom;
     background-size: 100% 1035px, 100% 2073px;
     background-image: url(../images/desktop/header-bg/desktop-header-bg@1x.png),

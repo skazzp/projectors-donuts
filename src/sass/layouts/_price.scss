@@ -1,5 +1,9 @@
 .price {
-  background-color: var(--regestration-box-clr);
+  background-color: var(--btn-txt-clr);
+
+  @media screen and (min-width: 1280px) {
+    background-color: var(--regestration-box-clr);
+  }
 }
 
 .price__title {
@@ -32,13 +36,13 @@
 
   border-radius: 40px;
   background-color: var(--main-clr);
-  background-image: url(../images/mobile/price-bg/snot-mob.png);
+  background-image: url(../images/mobile/price-bg/snot.png);
   background-repeat: no-repeat;
   background-size: contain;
 
   @include transition (background-position, background-size, background-image);
     
-  @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png));
+  @include retina-bcg (url(../images/mobile/price-bg/snot@2x.png));
 
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
@@ -54,6 +58,9 @@
 
   @media screen and (min-width: 768px) {
     @include flex-basis(3, 15px);
+
+    background-image: url(../images/tablet/price-bg/snot.png);
+    @include retina-bcg (url(../images/tablet/price-bg/snot@2x.png));
   }
 
   @media screen and (min-width: 1280px) {
@@ -82,12 +89,12 @@
     66px 74px,
     66px 74px;
   background-image: 
-    url(../images/mobile/price-bg/snot-mob.png),
+    url(../images/desktop/price-bg/snot.png),
     url(../images/desktop/price/donut1.png),
     url(../images/desktop/price/donut3.png),
     url(../images/desktop/price/donut2.png);
 
-    @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
+    @include retina-bcg (url(../images/desktop/price-bg/snot@2x.png),
         url(../images/desktop/price/donut1@2x.png),
         url(../images/desktop/price/donut3@2x.png),
         url(../images/desktop/price/donut2@2x.png));
@@ -100,15 +107,15 @@
       88px 88px,
       88px 96px;
       background-image: 
-      url(../images/mobile/price-bg/snot-mob.png),
-      url(../images/mobile/programm/mobile-2-cooking-donut.png),
-      url(../images/mobile/programm/mobile-1-cooking-donut.png),
-      url(../images/mobile/programm/mobile-4-cooking-donut.png);
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png),
+      url(../images/desktop/programm/desktop-4-cooking-donut.png);
         
-      @include retina-bcg (url(../images/mobile/price-bg/snot-mob@2x.png),
-        url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
-        url(../images/mobile/programm/mobile-1-cooking-donut@2x.png),
-        url(../images/mobile/programm/mobile-4-cooking-donut@2x.png));
+      @include retina-bcg (url(../images/desktop/price-bg/snot@2x.png),
+        url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+        url(../images/desktop/programm/desktop-1-cooking-donut@2x.png),
+        url(../images/desktop/programm/desktop-4-cooking-donut@2x.png));
     }
   }
 }
@@ -120,12 +127,12 @@
       top 366px right 0, 
       top 448px left 0;
   background-image: 
-    url(../images/mobile/price-bg/snot-mob.png),
+    url(../images/desktop/price-bg/snot.png),
     url(../images/desktop/price/donut1.png),
     url(../images/desktop/price/donut3.png); 
 
   @include retina-bcg (
-    url(../images/mobile/price-bg/snot-mob@2x.png),
+    url(../images/desktop/price-bg/snot@2x.png),
     url(../images/desktop/price/donut1@2x.png),
     url(../images/desktop/price/donut3@2x.png));
 
@@ -136,14 +143,14 @@
       88px 96px,
       88px 88px;
     background-image: 
-      url(../images/mobile/price-bg/snot-mob.png),
-      url(../images/mobile/programm/mobile-2-cooking-donut.png),
-      url(../images/mobile/programm/mobile-1-cooking-donut.png); 
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png); 
 
   @include retina-bcg (
-    url(../images/mobile/price-bg/snot-mob@2x.png),
-    url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
-    url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    url(../images/desktop/price-bg/snot@2x.png),
+    url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+    url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
     }  
   }     
 }
@@ -156,12 +163,12 @@
     bottom 0 left 44px;
 
   background-image: 
-    url(../images/mobile/price-bg/snot-mob.png),
+    url(../images/desktop/price-bg/snot.png),
     url(../images/desktop/price/donut1.png),
     url(../images/desktop/price/donut3.png);
 
     @include retina-bcg (
-        url(../images/mobile/price-bg/snot-mob@2x.png),
+        url(../images/desktop/price-bg/snot@2x.png),
         url(../images/desktop/price/donut1@2x.png),
         url(../images/desktop/price/donut3@2x.png));
 
@@ -172,14 +179,14 @@
       88px 96px,
       88px 88px;
     background-image: 
-      url(../images/mobile/price-bg/snot-mob.png),
-      url(../images/mobile/programm/mobile-2-cooking-donut.png),
-      url(../images/mobile/programm/mobile-1-cooking-donut.png); 
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png); 
 
   @include retina-bcg (
-    url(../images/mobile/price-bg/snot-mob@2x.png),
-    url(../images/mobile/programm/mobile-2-cooking-donut@2x.png),
-    url(../images/mobile/programm/mobile-1-cooking-donut@2x.png));
+    url(../images/desktop/price-bg/snot@2x.png),
+    url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+    url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
     }
   }  
 }

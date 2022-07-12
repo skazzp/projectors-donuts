@@ -1,13 +1,43 @@
 .logo {
   width: 96px;
   height: 50px;
-
   @media screen and (min-width: 1280px) {
     width: 158px;
     height: 116px;
-    transform: scaleY(1.5);
+  }
+  &__md {
+    @media screen and (max-width: 1279px) {
+      display: block;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__lg {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
   }
 }
 .logo-link {
   display: inline-flex;
 }
+// .logo__md {
+//   @media screen and (max-width: 1279px) {
+//     display: block;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     display: none;
+//   }
+// }
+// .logo__lg {
+//   @media screen and (max-width: 1279px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//   }
+// }

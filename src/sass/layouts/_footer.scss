@@ -5,6 +5,10 @@
   background-size: 30%;
   background-repeat: no-repeat;
   background-position:right bottom;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 46px;
+  }
   
 
 
@@ -19,6 +23,7 @@
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/contact/tablet-footer-spoon-and-flour.png);
     background-size: contain;
+    padding-bottom: 83px;
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -31,7 +36,10 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 82px;
+    padding-bottom: 232px;
     background-image: url(../images/desktop/contact/desktop-footer-spoon-and-flour.png);
+    background-position: right;
+    
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -62,7 +70,7 @@
     gap: 500px;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     gap: 290px;
   }
 
@@ -111,18 +119,5 @@
 .footer-contacts__link:hover::after,
 .footer-contacts__link:focus::after {
   width: 100%;
-}
-
-.footer-container {
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 232px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 83px;
-  }
-  @media screen and (max-width: 767px) {
-    padding-bottom: 46px;
-  }
-
 }
 

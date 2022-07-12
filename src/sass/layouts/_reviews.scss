@@ -1,24 +1,32 @@
 .reviews__slider {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+
   @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
     width: 700px;
-    height: 468px;
+    height: 466px;
   }
   @media screen and (min-width: 1280px) {
     width: 1030px;
-    height: 675px;
+    height: 595px;
   }
   .slick-current {
     @media screen and (min-width: 768px) {
+      padding-top: 20px;
       margin: 0 16px;
-      margin-top: 83px;
+      margin-top: 76px;
       width: 316px;
       @media screen and (min-width: 1280px) {
         width: 374px;
-        margin-top: 228px;
+        margin-top: 122px;
       }
+    }
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 40px 60px -40px rgba(255, 255, 255, 0.8);
+      // box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
     }
   }
 }
@@ -27,6 +35,7 @@
   font-size: 24px;
   line-height: calc(30 / 24);
   color: #2e2520;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-bottom: 7px;
   }
@@ -38,7 +47,6 @@
 }
 
 .reviews__item {
-  transition: all 300ms;
   width: 280px;
   @media screen and (min-width: 768px) {
     margin: 0 20px;
@@ -54,23 +62,20 @@
   border-radius: 50%;
   margin-bottom: 8px;
 }
-
 .reviews__icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
   webkit-filter: blur(8px);
   filter: blur(8px);
-  // &:hover {
-  //   webkit-filter: blur(0px);
-  //   filter: blur(0px);
-  // }
-  .reviews__item:hover &,
-  .reviews__item:focus & {
+  .slick-current & {
     webkit-filter: blur(0px);
     filter: blur(0px);
   }
 }
+// .slick-current:hover &,
+//   .slick-current:focus &
+
 .reviews__name {
   margin-bottom: 8px;
   font-style: italic;
@@ -103,6 +108,7 @@
     font-size: 18px;
     line-height: calc(22 / 18);
   }
+  box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
 }
 
 .slick-dots > li > button {

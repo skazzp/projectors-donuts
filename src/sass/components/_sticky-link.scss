@@ -1,11 +1,6 @@
 
-.sticky {
-
-    // display: none;
-
-    // @media screen and (min-width: 1280px){
-        
-        // display: block;   
+.sticky {  
+      
         @include size-img (80px, 72px);
         position: fixed;
         // right: calc(((100% - 1280px) / 2) + 40px);
@@ -16,14 +11,22 @@
         background-repeat: no-repeat;
         background-size: 80px, 72px;
         background-image: url(../images/desktop/donut4-2.ico);
-        opacity: 0.5;
+        opacity: 0.7;
 
-        @include transition (opacity);
+        transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
     // }
 }
 
+.sticky.is-hide {
+opacity: 0;
+pointer-events: none;
+transition: opacity 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .sticky:hover {
     opacity: 1;
+
     -webkit-animation: swing 0.6s ease;
     animation: swing 0.6s ease;
      -webkit-animation-iteration-count: 1;

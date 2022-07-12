@@ -78,6 +78,12 @@
   display: block;
   margin-bottom: 12px;
   border-radius: 50%;
+  // webkit-filter: blur(4px);
+  // filter: blur(4px);
+  // &:hover {
+  //   webkit-filter: blur(0px);
+  //   filter: blur(0px);
+  // }
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }

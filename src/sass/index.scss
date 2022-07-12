@@ -1,9 +1,7 @@
 @import './common';
-// @import './example';
 // vars
 @import './utils/vars';
 @import './utils/mixin-placeholder';
-
 @import './utils/hamburgers';
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 // base
@@ -13,14 +11,15 @@
 @import './components/btn';
 @import './components/logo';
 @import './components/social-list';
+@import './components/sticky-link';
 @import './layouts/mobile-menu';
 // layouts
 @import './layouts/header';
 @import './layouts/about-us';
 @import './layouts/program';
-// @import './layouts/speakers';
+@import './layouts/speakers';
 @import './layouts/price';
-// @import './layouts/reviews';
+@import './layouts/reviews';
 @import './layouts/registration';
 @import './layouts/contact';
 @import './layouts/footer';

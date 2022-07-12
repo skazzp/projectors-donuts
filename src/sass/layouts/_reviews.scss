@@ -1,76 +1,81 @@
-.reviews__section {
-  margin-top: 8px;
-  min-width: 320px;
-  background-position: top 15px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media screen and (max-width: 767px) {
-    max-width: 100%;
-    background-image: url(/src/images/mobile/reviews-bg/rewiews.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/mobile/reviews-bg/rewiews@2x.png);
-    }
-  }
+.reviews__slider {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+
   @media screen and (min-width: 768px) {
-    max-width: 1279px;
-    width: 100%;
-    background-image: url(/src/images/tablet/reviews-bg/reviews.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/tablet/reviews-bg/revews@2x.png);
-    }
+    margin-bottom: 20px;
+    width: 700px;
+    height: 466px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1600px;
-    background-image: url(/src/images/desktop/reviews-bg/vector.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/reviews-bg/vector@2x.png);
+    width: 1030px;
+    height: 595px;
+  }
+  .slick-current {
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+      margin: 0 16px;
+      margin-top: 76px;
+      width: 316px;
+      @media screen and (min-width: 1280px) {
+        width: 374px;
+        margin-top: 122px;
+      }
+    }
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 40px 60px -40px rgba(255, 255, 255, 0.8);
+      // box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
     }
   }
 }
 .reviews__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: #2e2520;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
     font-size: 36px;
     line-height: calc(45 / 36);
   }
 }
-.reviews__article {
-  //   height: 650px;
-}
-.reviews__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.reviews__item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 280px;
-}
-.reviews__rate {
-  display: block;
-  //   display: flex;
-  margin-left: 0;
-  margin-right: 0;
 
-  //   sdfgsdfsdfsdfasdfasdf
+.reviews__item {
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    margin: 0 20px;
+    width: 152px;
+    @media screen and (min-width: 1280px) {
+      width: 288px;
+    }
+  }
+}
+
+.reviews__img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 8px;
 }
 .reviews__icon {
   display: block;
-  margin-left: 0;
-  margin-right: 0;
-  align-items: center;
-  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  webkit-filter: blur(8px);
+  filter: blur(8px);
+  .slick-current & {
+    webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
 }
+// .slick-current:hover &,
+//   .slick-current:focus &
+
 .reviews__name {
   margin-bottom: 8px;
   font-style: italic;
@@ -78,10 +83,63 @@
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
+  color: var(--main-txt-clr);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 .reviews__comment {
+  width: 280px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
+  color: var(--main-txt-clr);
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1030px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
+}
+
+.slick-dots > li > button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--btn-clr);
+}
+.slick-dots {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before,
+  &::after {
+    content: '';
+    width: 35px;
+    height: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--btn-clr);
+  }
+}
+.slick-dots > li {
+  display: none;
+  &::after {
+    color: var(--btn-clr);
+    content: '/6';
+  }
+  &.slick-active {
+    display: contents;
+  }
 }

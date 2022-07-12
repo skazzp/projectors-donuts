@@ -1,5 +1,5 @@
 .program {
-    background-color: var(--regestration-box-clr);
+    padding-bottom: 4px;
   
     @media screen and (min-width: 768px) {
         padding-top: 60px;
@@ -156,10 +156,20 @@
     @media screen and (min-width: 768px) {
         @include size-img (82px, 90px);
         transform: translate(42%, -40%);
+
+        background-image: 
+        url(../images/tablet/programm/tablet-1-cooking-donut.png);
+    
+        @include retina-bcg (url(../images/tablet/programm/tablet-1-cooking-donut@2x.png));
     }
 
     @media screen and (min-width: 1280px) {
         @include size-img (97px, 107px);
+
+        background-image: 
+        url(../images/desktop/programm/desktop-1-cooking-donut.png);
+    
+        @include retina-bcg (url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
     }
 
 }
@@ -188,10 +198,20 @@
     @media screen and (min-width: 768px) {
         @include size-img (69px, 76px);
         transform: translate(58%, -37%);
+
+        background-image:
+        url(../images/tablet/programm/tablet-2-cooking-donut.png);
+
+        @include retina-bcg (url(../images/tablet/programm/tablet-2-cooking-donut@2x.png));
     }
 
     @media screen and (min-width: 1280px) {
         @include size-img (83px, 92px);
+
+        background-image:
+        url(../images/desktop/programm/desktop-2-cooking-donut.png);
+
+        @include retina-bcg (url(../images/desktop/programm/desktop-2-cooking-donut@2x.png));
     }
 }
 
@@ -217,10 +237,20 @@
     @media screen and (min-width: 768px) {
         @include size-img (74px, 82px);
         transform: translate(52%, -41%);
+
+        background-image: 
+            url(../images/tablet/programm/tablet-3-cooking-donut.png);
+    
+        @include retina-bcg (url(../images/tablet/programm/tablet-3-cooking-donut@2x.png));
     }
 
     @media screen and (min-width: 1280px) {
-            @include size-img (88px, 97px);
+        @include size-img (88px, 97px);
+
+        background-image: 
+            url(../images/desktop/programm/desktop-3-cooking-donut.png);
+    
+        @include retina-bcg (url(../images/desktop/programm/desktop-3-cooking-donut@2x.png));
     }   
 }
 
@@ -246,10 +276,19 @@
     @media screen and (min-width: 768px) {
         @include size-img (70px, 78px);
         transform: translate(59%, -38%);
+
+        background-image:
+            url(../images/tablet/programm/tablet-4-cooking-donut.png);
+
+        @include retina-bcg (url(../images/tablet/programm/tablet-1-cooking-donut@2x.png));
     }
 
     @media screen and (min-width: 1280px) {
         @include size-img (83px, 92px);
+        background-image:
+            url(../images/desktop/programm/desktop-4-cooking-donut.png);
+
+        @include retina-bcg (url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
     }
 }
 

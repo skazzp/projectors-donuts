@@ -19,25 +19,39 @@
   // border-width: 1px;
   // border-color: transparent;
   // transition: transform 250ms linear;
-
-  &:hover,
-  &:focus {
-    // font-weight: 700;
-    // letter-spacing: 0.07em;
-    // border-color: var(--btn-clr);
-    // border-width: 1px;
-    // border-style: solid;
-    color: var(--btn-clr);
-    background-color: var(--btn-txt-clr);
-    border: 1px solid var(--btn-clr);
-    box-shadow: 0px 3px 3px var(--btn-clr);
-    transform: translateY(-2px);
+  @media screen and (max-width: 1279px) {
+    &:active {
+      color: var(--btn-clr);
+      background-color: var(--btn-txt-clr);
+      border: 1px solid var(--btn-clr);
+      box-shadow: 0px 3px 3px var(--btn-clr);
+      transform: scale(1.05);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus {
+      color: var(--btn-clr);
+      background-color: var(--btn-txt-clr);
+      border: 1px solid var(--btn-clr);
+      box-shadow: 0px 3px 3px var(--btn-clr);
+      transform: scale(1.05);
+      // cursor: url(../images/cursor.cur), auto;
+      // font-weight: 500;
+      // letter-spacing: 0.07em;
+      // border-color: var(--btn-clr);
+      // border-width: 1px;
+      // border-style: solid;
+    }
   }
 }
 
 // dsctp only in header width 158px height 45px
 
 .btn-read-more {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
   padding: 0;
 
   font-size: 18px;
@@ -48,9 +62,9 @@
   cursor: pointer;
 }
 
-.btn-read-more .btn-read-more--open {
-  display: none;
-}
+// .btn-read-more .btn-read-more--open {
+//   display: none;
+// }
 
 .btn-read-more.is-open {
   .btn-read-more--open {

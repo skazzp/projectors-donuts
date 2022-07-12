@@ -1,34 +1,9 @@
-<header>
+<header id="header">
   <div class="header__container container">
-    <picture class="header-bg">
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./images/desktop/header-bg/desktop-header-bg.png    1x,
-          ./images/desktop/header-bg/desktop-header-bg@2x.png 2x
-        "
-        sizes="(min-width: 1280px) 716px, 100vw" />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/tablet/header-bg/tablet-header-bg.png    1x,
-          ./images/tablet/header-bg/tablet-header-bg@2x.png 2x
-        "
-        sizes="(min-width: 768px) 768px, 100vw" />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./images/mobile/header-bg/mobile-header-bg.png    1x,
-          ./images/mobile/header-bg/mobile-header-bg@2x.png 2x
-        "
-        sizes="(max-width: 767px) 480px, 100vw"
-        width="480px" />
-      <img src="./images/mobile/header/header-donuts@1x.png" alt="DONUTS!"
-    /></picture>
     <button
       class="menu-btn hamburger hamburger--stand"
       type="button"
-      aria-label="Меню"
+      aria-label="Menu"
       aria-controls="navigation"
       data-menu-button
     >
@@ -41,8 +16,8 @@
         <source
           media="(min-width: 1280px)"
           srcset="
-            ./images/desktop/header/header-donuts@1x.png 1x,
-            ./images/desktop/header/header-donuts@2x.png 2x
+            ./images/desktop/header/header-donuts-full@1x.png 1x,
+            ./images/desktop/header/header-donuts-full@2x.png 2x
           "
           sizes="(min-width: 1280px) 716px, 100vw" />
         <source
@@ -55,13 +30,14 @@
         <source
           media="(max-width: 767px)"
           srcset="
-            ./images/mobile/header/header-donuts@1x.png 1x,
-            ./images/mobile/header/header-donuts@2x.png 2x
+            ./images/mobile/header/header-donuts-full@1x.png 1x,
+            ./images/mobile/header/header-donuts-full@2x.png 2x
           " />
         <img src="./images/mobile/header/header-donuts@1x.png" alt="DONUTS!"
       /></picture>
     </div>
-    <div class="mob-menu" data-menu>
+
+    <div class="mob-menu" id="menu" data-menu>
       <a class="mob-menu__link" href="./index.html">
         <svg class="mob-menu__logo">
           <use href="./images/icons.svg#icon-logo"></use>
@@ -84,14 +60,15 @@
           <a class="menu__link" href="#reviews">Reviews</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#contacts">Contacts</a>
+          <a class="menu__link" href="#contact">Contacts</a>
         </li>
       </ul>
     </div>
     <div class="menu__nav-container">
       <a class="logo-link" href="./index.html">
         <svg class="logo">
-          <use href="./images/icons.svg#icon-logo"></use>
+          <use class="logo__md" href="./images/icons.svg#icon-logo_sm"></use>
+          <use class="logo__lg" href="./images/icons.svg#icon-logo_lg"></use>
         </svg>
       </a>
       <ul class="list desktop-menu">
@@ -111,14 +88,16 @@
           <a class="menu__link" href="#reviews">Reviews</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#contacts">Contacts</a>
+          <a class="menu__link" href="#contact">Contacts</a>
         </li>
       </ul>
     </div>
     <div class="header-content">
       <h1 class="header__title">Donut Masterclass with the Donut King</h1>
       <h2 class="header-content__title">Hosted by Eva Green</h2>
-      <a class="header-content__button btn link" href="#register">Register</a>
+      <a class="header-content__button btn link" href="#section-registration"
+        >Register</a
+      >
       <ul class="list socials">
         <li class="socials__item">
           <a
@@ -157,7 +136,7 @@
           </a>
         </li>
       </ul>
-      <picture class="header-content__pic">
+      <!-- <picture class="header-content__pic">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -166,8 +145,8 @@
           "
           sizes="(min-width: 1280px) 716px, 100vw" />
 
-        <img src="./images/desktop/header/header-spoon@1x.png" alt="DONUTS!"
-      /></picture>
+        <img src="./images/desktop/header/header-spoon@1x.png" alt="Spoon"
+      /></picture> -->
     </div>
   </div>
 </header>

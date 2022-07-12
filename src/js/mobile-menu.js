@@ -27,8 +27,8 @@
   window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
     if (!e.matches) return;
 
-    mobileMenuRef.classList.toggle('is-open');
-    menuBtnRef.classList.toggle('is-active');
+    mobileMenuRef.classList.remove('is-open');
+    menuBtnRef.classList.remove('is-active');
     menuBtnRef.setAttribute('aria-expanded', false);
   });
 })();

@@ -1,0 +1,2 @@
+$(".reviews__slider").slick({infinite:!0,arrows:!1,slidesToShow:3,slidesToScroll:1,centerMode:!0,variableWidth:!0,dots:!1,mobileFirst:!0,asNavFor:".reviews__description",responsive:[{},{breakpoint:768,settings:{slidesToShow:3,slidesToScroll:1,dots:!1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1,dots:!1}}]}),$(".reviews__description").slick({asNavFor:".reviews__slider",dots:!0,arrows:!1,infinite:!0});
+//# sourceMappingURL=index.50178dc7.js.map

@@ -18,6 +18,8 @@
         position: relative;
         top: -35;
         left: 0;
+        z-index:-20;
+        
     }
 
     @media screen and (min-width: 768px) {
@@ -27,7 +29,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        top: -39px;
+        top: -45px;
         left: 122px;
         z-index: -100;
     }
@@ -104,15 +106,16 @@
     top: 0;
     left: 0;
     z-index: -1;
- 
+
     animation: move 1.5s linear alternate;
 }
- 
- 
- @keyframes move {
+
+
+@keyframes move {
     0% {
         top: 200px;
     }
+
     100% {
         top: 0px;
     }

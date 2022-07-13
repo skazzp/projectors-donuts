@@ -6,9 +6,12 @@
   background-position:right bottom;
   
   
+  
 
   @media screen and (max-width: 767px) {
     padding-bottom: 46px;
+    background-size: 84px 89px;
+    
   }
   
 
@@ -26,7 +29,7 @@
     padding-bottom: 100px;
     padding-top: 40px;
     background-position: right bottom;
-
+    background-size: 184px 163px;
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -41,6 +44,7 @@
     background-image: url(../images/desktop/contact/desktop-footer-spoon-and-flour.png);
     background-position: right top 120;
     position: relative;
+    background-size: 303px 312px;
     
     
     

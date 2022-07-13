@@ -13,16 +13,18 @@
     height: 595px;
   }
   .slick-center {
-    transform: scale(1);
+    // transform: scale(1);
     // transition: all 500ms;
     @media screen and (min-width: 768px) {
       padding-top: 20px;
       margin: 0 16px;
       margin-top: 76px;
-      transform: scale(1.15);
-      // width: 316px;
+      // transform: scale(1.15);
+      // width: 270px;
+      width: 316px;
       @media screen and (min-width: 1280px) {
-        // width: 374px;
+        transform: scale(1);
+        width: 394px;
         margin-top: 122px;
         &:hover,
         &:focus {
@@ -51,11 +53,13 @@
 .reviews__item {
   width: 280px;
   @media screen and (min-width: 768px) {
-    width: 260px;
-    transform: scale(0.58463);
+    // width: 260px;
+    // transform: scale(0.58463);
+    width: 152px;
+    // width: 316px;
     @media screen and (min-width: 1280px) {
       width: 394px;
-      transform: scale(0.731);
+      transform: scale(0.713);
       // transition: all 500ms;
     }
   }
@@ -79,6 +83,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
   webkit-filter: blur(8px);
   filter: blur(8px);
   .slick-current & {

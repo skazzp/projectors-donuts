@@ -4,6 +4,8 @@
 }
 
 .speakers__title {
+  font-size: 24px;
+  line-height: calc(30 / 24);
   background-color: var(--regestration-box-clr);
   @media screen and (min-width: 768px) {
     font-size: 36px;

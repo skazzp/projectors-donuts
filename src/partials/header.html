@@ -4,7 +4,7 @@
       class="menu-btn hamburger hamburger--stand"
       type="button"
       aria-label="Menu"
-      aria-controls="navigation"
+      aria-controls="menu"
       data-menu-button
     >
       <span class="hamburger-box">
@@ -16,23 +16,46 @@
         <source
           media="(min-width: 1280px)"
           srcset="
+            ./images/desktop/header/header-donuts-full@1x.webp 1x,
+            ./images/desktop/header/header-donuts-full@2x.webp 2x
+          "
+          type="image/webp" />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
             ./images/desktop/header/header-donuts-full@1x.png 1x,
             ./images/desktop/header/header-donuts-full@2x.png 2x
           "
-          sizes="(min-width: 1280px) 716px, 100vw" />
+          type="image/png" />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/tablet/header/header-donuts@1x.webp 1x,
+            ./images/tablet/header/header-donuts@2x.webp 2x
+          "
+          type="image/webp" />
         <source
           media="(min-width: 768px)"
           srcset="
             ./images/tablet/header/header-donuts@1x.png 1x,
             ./images/tablet/header/header-donuts@2x.png 2x
           "
-          sizes="(min-width: 768px) 768px, 100vw" />
+          type="image/png" />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/mobile/header/header-donuts-full@1x.webp 1x,
+            ./images/mobile/header/header-donuts-full@2x.webp 2x
+          "
+          type="image/webp" />
+
         <source
           media="(max-width: 767px)"
           srcset="
             ./images/mobile/header/header-donuts-full@1x.png 1x,
             ./images/mobile/header/header-donuts-full@2x.png 2x
-          " />
+          "
+          type="image/png" />
         <img src="./images/mobile/header/header-donuts@1x.png" alt="DONUTS!"
       /></picture>
     </div>

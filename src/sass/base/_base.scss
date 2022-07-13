@@ -17,7 +17,7 @@ body {
   background-color: var(--btn-txt-clr);
   background-repeat: no-repeat;
   background-position: center top, right bottom 211px;
-  background-size: 100% 460px, 100% 1303px;
+  background-size: 100% 460px, 100% 1253px;
   background-image: url(../images/mobile/header-bg/mobile-header-bg.png),
     url(../images/mobile/reviews-bg/bg.png);
 
@@ -30,7 +30,7 @@ body {
 
   @media screen and (min-width: 768px) {
     background-position: center top, right bottom 101px;
-    background-size: 100% 622px, 100% 1255px;
+    background-size: 100% 622px, 100% 1405px;
     background-image: url(../images/tablet/header-bg/tablet-header-bg.png),
       url(../images/tablet/reviews-bg/bg.png);
     @media (min-device-pixel-ratio: 2),

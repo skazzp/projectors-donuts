@@ -34,6 +34,12 @@
    }
 }
 
+.about__text-add {
+    @media screen and (min-width: 1280px) {
+        width: 392px;
+   }
+}
+
 .article__title {
     margin-bottom: 8px;
 

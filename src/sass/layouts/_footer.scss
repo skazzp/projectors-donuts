@@ -1,7 +1,6 @@
 .footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-size: 113px 113px;
   background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png);
   background-repeat: no-repeat;
   background-position:right bottom;
@@ -11,7 +10,7 @@
 
   @media screen and (max-width: 767px) {
     padding-bottom: 46px;
-    
+    background-size: 113px 99px;
     
   }
   
@@ -45,7 +44,7 @@
     background-image: url(../images/desktop/contact/desktop-footer-spoon-and-flour.png);
     background-position: right top 120;
     position: relative;
-    background-size: 355px 355px;
+    background-size: 355px 312px;
     
     
     

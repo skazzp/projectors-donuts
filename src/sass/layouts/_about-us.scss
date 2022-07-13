@@ -18,7 +18,7 @@
         position: relative;
         top: -35;
         left: 0;
-        
+        z-index:-20;
         
     }
 
@@ -29,7 +29,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        top: -39px;
+        top: -45px;
         left: 122px;
         z-index: -100;
     }

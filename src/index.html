@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Oh my, DONUTS!</title>
+    <title>Oh my, DONUT!</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -40,15 +40,19 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/about-us.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/speakers.html"></include>
-    <include src="./partials/price.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contact.html"></include>
-    <include src="./partials/footer.html"></include>
+    <div class="page">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/about-us.html"></include>
+        <include src="./partials/program.html"></include>
+        <include src="./partials/speakers.html"></include>
+        <include src="./partials/price.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contact.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
     <include src="./partials/sticky-link.html"></include>
     <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/s-link.js" type="module"></script>

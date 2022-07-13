@@ -12,13 +12,10 @@
   display: inline-flex;
   justify-content: center;
   color: var(--btn-txt-clr);
-  // font-weight, letter-spacing,
   transition-property: color, background-color, border, transform, box-shadow;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // border-width: 1px;
-  // border-color: transparent;
-  // transition: transform 250ms linear;
+
   @media screen and (max-width: 1279px) {
     &:active {
       color: var(--btn-clr);
@@ -36,17 +33,9 @@
       border: 1px solid var(--btn-clr);
       box-shadow: 0px 3px 3px var(--btn-clr);
       transform: scale(1.05);
-      // cursor: url(../images/cursor.cur), auto;
-      // font-weight: 500;
-      // letter-spacing: 0.07em;
-      // border-color: var(--btn-clr);
-      // border-width: 1px;
-      // border-style: solid;
     }
   }
 }
-
-// dsctp only in header width 158px height 45px
 
 .btn-read-more {
   @media screen and (min-width: 1280px) {
@@ -61,10 +50,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
-// .btn-read-more .btn-read-more--open {
-//   display: none;
-// }
 
 .btn-read-more.is-open {
   .btn-read-more--open {

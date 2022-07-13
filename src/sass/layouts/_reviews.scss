@@ -5,28 +5,32 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
-    width: 700px;
+    width: 704px;
     height: 466px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1030px;
+    width: 1248px;
     height: 595px;
   }
-  .slick-current {
+  .slick-center {
+    // transform: scale(1);
+    // transition: all 500ms;
     @media screen and (min-width: 768px) {
       padding-top: 20px;
       margin: 0 16px;
       margin-top: 76px;
+      // transform: scale(1.15);
+      // width: 270px;
       width: 316px;
       @media screen and (min-width: 1280px) {
-        width: 374px;
+        transform: scale(1);
+        width: 394px;
         margin-top: 122px;
+        &:hover,
+        &:focus {
+          box-shadow: inset 0 40px 60px -40px rgba(255, 255, 255, 0.8);
+        }
       }
-    }
-    &:hover,
-    &:focus {
-      box-shadow: inset 0 40px 60px -40px rgba(255, 255, 255, 0.8);
-      // box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
     }
   }
 }
@@ -49,13 +53,26 @@
 .reviews__item {
   width: 280px;
   @media screen and (min-width: 768px) {
-    margin: 0 20px;
+    // width: 260px;
+    // transform: scale(0.58463);
     width: 152px;
+    // width: 316px;
     @media screen and (min-width: 1280px) {
-      width: 288px;
+      width: 394px;
+      transform: scale(0.713);
+      // transition: all 500ms;
     }
   }
 }
+// .slick-active,
+// .slick-cloned {
+//   @media screen and (min-width: 768px) {
+//     transform: scale(0.481);
+//   }
+//   @media screen and (min-width: 1280px) {
+//     transform: scale(0.731);
+//   }
+// }
 
 .reviews__img {
   width: 100%;
@@ -66,6 +83,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
   webkit-filter: blur(8px);
   filter: blur(8px);
   .slick-current & {

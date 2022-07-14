@@ -3,24 +3,18 @@
   padding-bottom: 10px;
   background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour.png);
   background-repeat: no-repeat;
-  background-position:right bottom;
-  
-  
-  
+  background-position: right bottom;
 
   @media screen and (max-width: 767px) {
     padding-bottom: 46px;
     background-size: 84px 89px;
-    
   }
-  
-
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/mobile/contact/mobile-footer-spoon-and-flour@2x.png);
   }
 
@@ -31,10 +25,10 @@
     background-position: right bottom;
     background-size: 184px 163px;
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url(../images/tablet/contact/tablet-footer-spoon-and-flour@2x.png);
     }
   }
@@ -45,15 +39,12 @@
     background-position: right top 120;
     position: relative;
     background-size: 303px 312px;
-    
-    
-    
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url(../images/desktop/contact/desktop-footer-spoon-and-flour@2x.png);
     }
   }
@@ -85,28 +76,23 @@
   font-style: normal;
   font-size: 16px;
   display: flex;
-  justify-content:center;
+  justify-content: space-between;
   margin-top: 4px;
 
-  @media screen and (min-width: 1280px) {
-    gap: 50px;
-  }
-  
   @media screen and (min-width: 768px) {
     gap: 280px;
+    justify-content: center;
   }
 
-  @media screen and (max-width: 767px) {
-    gap: 90px;
+  @media screen and (min-width: 1280px) {
+    gap: 620px;
+    justify-content: center;
   }
 }
-
 
 .footer-contacts__icon {
   margin-right: 3px;
   fill: currentColor;
-  
-
 }
 
 .footer-contacts__link {
@@ -123,7 +109,6 @@
   &:focus {
     outline: 1px solid #575655;
   }
-
 }
 
 .footer-contacts__link {
@@ -146,5 +131,3 @@
 .footer-contacts__link:focus::after {
   width: 100%;
 }
-
-
